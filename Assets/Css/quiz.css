@@ -1,0 +1,165 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(../Images/Background.png) no-repeat;
+  background-size:100% ;
+
+}
+header{
+  display: flex;
+}
+header img {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  } 
+header a {
+    text-decoration:none;
+    text-decoration-color: none;
+    color: inherit;
+  }
+header li {
+    display: inline-block;
+    padding: 0em 0.5em;
+  }
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-flow: unset;
+
+}
+
+.navbar{
+  background: #49654C;
+box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.25);
+border-radius: 23px;
+height: 2.8rem;
+width: 40%;
+margin-left: 39rem;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+color: #EBEBE9;
+margin-top:1.5rem;
+justify-content: center;
+}
+.alt {
+  background: #EBEBE9;
+  color: #253628;
+  border-radius: 47px;
+  margin-top: 0.5rem;
+  margin-left: 7rem;
+}
+.home {
+
+  margin-top: 0.5rem;
+  margin-left: 1.4rem;
+}
+.items{
+  margin-left: 7rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0px 20px;
+  
+}
+ header li:hover {
+  transition: background-color 0.5s ease;
+  background-color: #EBEBE9;
+  color: #253628;
+  border-radius: 47px;
+  
+} 
+
+/* Quiz section */
+
+center h1{
+  font-size: 50px;
+  font-family: Roboto;
+  color: #FFD400;
+  font-style: italic;
+}
+
+center h3 {
+font-family: 'Nunito', sans-serif;
+color: blue;
+}
+center button{
+  padding: 10px;
+  margin: 10px;
+  width: 227px;
+height: 43px;
+left: 325px;
+top: 294px;
+
+background: #C0CEB2;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 19px;
+
+}
+
+h4 {
+font-family: 'Nunito', sans-serif;
+color: blueviolet;
+}
+
+#showResult{
+  padding: 12px;
+  margin: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  background: #FFD400;
+  border: solid #FB8500;
+  font-family: 'Nunito', sans-serif;
+}
+.secondQuestion{
+  visibility: hidden;
+}
+
+.Results{
+  visibility: hidden;
+
+}
+
+.firstQuestion{
+    visibility: hidden;
+
+}
+
+center img{
+  height: 200px ;
+}
+
+#starGif1{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left:8%;
+  top: 5%;
+  z-index: 8;
+}
+#starGif2{
+  position: absolute;
+  left:5%;
+  top: 55%;
+  z-index: 8;
+}
+#starGif3{
+  position: absolute;
+  left: 80%;
+  top: 200px;
+  z-index: 8;
+}
+#starGif4{
+  position: absolute;
+  left: 83%;
+  top: 55%;
+  z-index: 8;
+}
