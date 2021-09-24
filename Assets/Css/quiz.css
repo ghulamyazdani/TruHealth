@@ -82,7 +82,7 @@ justify-content: center;
 center h1{
   font-size: 50px;
   font-family: Roboto;
-  color: #FFD400;
+  color: #253628;
   font-style: italic;
 }
 
@@ -97,10 +97,12 @@ center button{
 height: 43px;
 left: 325px;
 top: 294px;
+font-size: 18px;
 
 background: #C0CEB2;
-border: 1px solid #000000;
+border: none;
 box-sizing: border-box;
+box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
 border-radius: 19px;
 
 }
