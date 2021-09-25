@@ -1,31 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quiz</title>
+    <link href="./Assets/Css/quiz.css" rel="stylesheet" type="text/css" />
+    <script src="./Script/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./Assets/Css/style.css">
-  <title>TruHealth</title>
-</head>
-<body>
-  <header>
-    <img src="./Assets/Images/TruHealth.png" alt="">
-    <nav class="navbar">
-      <ul>
-        <li class="alt"><a href="#">Home</a></li>
-        <li class="items"><a href="#">Info</a></li>
-        <li class="items"><a href="#">Quiz</a></li>
-        <li class="items"><a href="#">Get Help</a></li>
-      </ul>
-
-    </nav>
-  </header>
-  <section>
-    
-  </section>
   
+  </head>
+
+  <body>
+    <header>
+      <img src="./Assets/Images/TruHealth.png" alt="">
+      <nav class="navbar">
+        <ul>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li class="items alt"><a href="./info.html">Info</a></li>
+          <li class="items "><a href="./quiz.html">Quiz</a></li>
+          <li class="items"><a href="./gethelp.html">Get Help</a></li>
+        </ul>
+  
+      </nav>
+    </header>
+  <section>
+    <div class="container">
+        <h1>How you can improve mental health in the time of pandemic?</h1>
+        <h2></h2>
+        <p>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act as we cope with life. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood and aging..</p>
+        <h3></h3>
+        <ul>
+        <p>There are many different things you can do to improve your mental health, including</p>
+        <li><b>Staying positive</b> It's important to try to have a positive outlook; some ways to do that include
+          Finding balance between positive and negative emotions. Staying positive doesn't mean that you never feel negative emotions, such as sadness or anger. You need to feel them so that you can move through difficult situations.
+           They can help you to respond to a problem. 
+          But you don't want those emotions to take over. For example, it's not helpful to keep thinking about bad things that happened in the past or worry too much about the future.</li>
+        <li><b>Connecting with others</b> Humans are social creatures, and it's important to have strong, healthy relationships with others. Having good social support may help protect you against the harms of stress. It is also good to have different types of connections. Besides connecting with family and friends, you could find ways to get involved with your community or neighborhood. For example, you could volunteer for a local organization or join a group that is focused on a hobby you enjoy.</li>
+        <li><b>Developing coping skills</b> which are methods you use to deal with stressful situations. 
+            They may help you face a problem, take action, be flexible, and not easily give up in solving it.</li>
+        <li><b>Developing a sense of meaning and purpose in life. </b> This could be through your job, volunteering, learning new skills, or exploring your spirituality.</li>
+        <li><b>Taking care of your physical health </b> since your physical and mental health are connected. Some ways to take care of your physical health include 
+          <br>Being physically active. Exercise can reduce feelings of stress and depression and improve your mood.<br> 
+          Getting enough sleep. Sleep affects your mood. If you don't get a good sleep, you may become more easily annoyed and angry. Over the long term, a lack of quality sleep can make you more likely to become depressed. So it's important to make sure that you have a regular sleep schedule and get enough quality sleep every night.</li>
+        <li><b>Meditation</b> which is a mind and body practice where you learn to focus your attention and awareness. There are many types, including mindfulness meditation and transcendental meditation. Meditation usually involves</li>
+      </ul>
+      <p class="video-recom">These are some video recomendations from us</p>
+    <div class="align-gallery">
+      <div class="grid-row reverse video-gallery">
+        <input type="radio" value="1" name="video-list" id="video-1" checked="checked" /><label for="video-1">How To Eliminate Self Doubt Forever </label>
+        <input type="radio" value="2" name="video-list" id="video-2" /><label for="video-2">Focus on yourself not others</label>
+        <input type="radio" value="3" name="video-list" id="video-3" /><label for="video-3">The most important lesson from 83,000 brain scans </label>
+        <input type="radio" value="4" name="video-list" id="video-4" /><label for="video-4">How to stop feeling anxious about anxiety</label>
+        <input type="radio" value="5" name="video-list" id="video-5" /><label for="video-5">How to Become Your Best When Life Gives You Its Worst</label>
+        <input type="radio" value="6" name="video-list" id="video-6" /><label for="video-6">How To Eliminate Self Doubt Forever </label>
+        <!-- videos -->
+        <div class="video video-1">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/oWjSdwzOA6k" frameborder="0" allowfullscreen></iframe>
+        </div>
+       
+        <div class="video video-2">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/eBSeCp__xhI" frameborder="0" allowfullscreen></iframe>
+        </div>
+       
+        <div class="video video-3">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/esPRsT-lmw8" frameborder="0" allowfullscreen></iframe>
+        </div>
+       
+        <div class="video video-4">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/ZidGozDhOjg" frameborder="0" allowfullscreen></iframe>
+        </div>
+       
+        <div class="video video-5">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/I4svF7J6MWg" frameborder="0" allowfullscreen></iframe>
+        </div>
+       
+        <div class="video video-6">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/v1ojZKWfShQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div> 
+    </div>
+      
+      </div>
+      
+    </section>
 </body>
 </html>
