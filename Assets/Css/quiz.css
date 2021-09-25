@@ -168,12 +168,24 @@ center img{
 }
 
 .container {
-  width:80%;
-margin-top: -5rem;
-margin-left: 10%;
 font-size: 1rem;
 background: rgba(192, 206, 178, 0.76);
 border-radius: 16px;
+}
+.wid{
+  margin-top: 2rem;
+  width:60%;
+  margin-left: 20% ;
+  padding-bottom: 3rem;
+}
+.wid-info{
+  width:80%;
+  margin-top: -5rem;
+  margin-left: 10%;
+}
+.container h3 , .desc{
+  margin-top: 1rem;
+  margin-left: 2rem;
 }
 
 div h1 {
@@ -182,8 +194,8 @@ div h1 {
 font-size: 1.9rem;
 text-align: center;
 }
-.container p {
-  margin-left: 1%;
+.para{
+  margin-left: 3rem;
 }
 .container li {
   margin-left: 4%;
@@ -197,6 +209,10 @@ text-align: center;
   margin-bottom: 0.5rem;
    
 
+}
+.align-cont{
+  margin-left: 3em;
+  margin-right: 3em;
 }
 iframe {
   width: 40%;
@@ -213,10 +229,11 @@ iframe {
 
 }
 .align-gallery{
-  margin-top: -2.5rem;
+  margin-top: -2rem;
   width: 80%;
   margin-left: 2rem;
   padding-bottom: 2rem;
+  margin-left: 10rem;
 }
 
 html {

@@ -16,7 +16,7 @@ header img {
   margin-top: 1.5rem;
   margin-left: 2rem;
   } 
-header a {
+header a , .btn a {
     text-decoration:none;
     text-decoration-color: none;
     color: inherit;
@@ -103,12 +103,15 @@ font-size: 18px;
 line-height: 28px;
 margin: 2.7rem;
 color: #EBEBE9;
+
 }
+
 .btn .btn-primary{
   transition: all 0.5s;
   cursor: pointer;
   display: inline-block;
   position: relative;
+  
  
 }
 .btn.btn-primary span {
@@ -116,6 +119,7 @@ color: #EBEBE9;
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  
 }
 .btn.btn-primary span:after {
   content: '\00bb';
