@@ -78,6 +78,9 @@ justify-content: center;
 } 
 
 /* Quiz section */
+center {
+  margin-top: -3rem;
+}
 
 center h1{
   font-size: 50px;
@@ -89,6 +92,7 @@ center h1{
 center h3 {
 font-family: 'Nunito', sans-serif;
 color: blue;
+padding: 1rem;
 }
 center button{
   padding: 10px;
