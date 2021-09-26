@@ -22,25 +22,25 @@ var choice13 = $('#btn13');
 
 function filler1() {
   questionSet1.css('visibility','visible');
-  choice11.css('background','#FFD400');
-  choice11.css('color','blue');
+  choice11.css('background','#93A681');
+  choice11.css('color','#EBEBE9');
 }
 function filler2() {
   questionSet1.css('visibility','visible');
-  choice12.css('background','#FFD400');
-  choice12.css('color','blue');
+  choice12.css('background','#93A681');
+  choice12.css('color','#EBEBE9');
 }
 function filler3() {
   questionSet1.css('visibility','visible');
-  choice13.css('background','#FFD400');
-  choice13.css('color','blue');
+  choice13.css('background','#93A681');
+  choice13.css('color','#EBEBE9');
 }
 
 function happy() {
   score = 1
 
- choice1.css('background','#FFD400');
-  choice1.css('color','blue');
+ choice1.css('background','#93A681');
+  choice1.css('color','#EBEBE9');
  questionSet2.css('visibility','visible');
   
    
@@ -49,8 +49,8 @@ function happy() {
  function sad() { 
   score = 2
 
-  choice2.css('background','#FFD400');
-  choice2.css('color','blue');
+  choice2.css('background','#93A681');
+  choice2.css('color','#EBEBE9');
  questionSet2.css('visibility','visible');
 
  } 
@@ -58,8 +58,8 @@ function happy() {
  function angry() { 
   score = 3
 
-  choice3.css('background','#FFD400');
-  choice3.css('color','blue');
+  choice3.css('background','#93A681');
+  choice3.css('color','#EBEBE9');
  questionSet2.css('visibility','visible');
 
  } 
@@ -67,8 +67,8 @@ function happy() {
   function nervous() { 
   score = 4
 
-  choice4.css('background','#FFD400');
-  choice4.css('color','blue');
+  choice4.css('background','#93A681');
+  choice4.css('color','#EBEBE9');
  questionSet2.css('visibility','visible');
 
  }  
@@ -76,8 +76,8 @@ function happy() {
   function sleepy() { 
   score = 5
 
-  choice5.css('background','#FFD400');
-  choice5.css('color','blue');
+  choice5.css('background','#93A681');
+  choice5.css('color','#EBEBE9');
  questionSet2.css('visibility','visible');
 
  }  
@@ -85,8 +85,8 @@ function happy() {
  function rock() { 
   score = score*7;
 
-  choice6.css('background','#FFD400');
-  choice6.css('color','blue');
+  choice6.css('background','#93A681');
+  choice6.css('color','#EBEBE9');
   resultsBtn.css('visibility', 'visible');
 
 
@@ -94,39 +94,39 @@ function happy() {
  function rap() { 
   score = score*11;
 
-  choice7.css('background','#FFD400');
-  choice7.css('color','blue');
+  choice7.css('background','#93A681');
+  choice7.css('color','#EBEBE9');
   resultsBtn.css('visibility', 'visible');
 
  }  
  function pop() { 
   score = score*13;
 
-  choice8.css('background','#FFD400');
-  choice8.css('color','blue');
+  choice8.css('background','#93A681');
+  choice8.css('color','#EBEBE9');
   resultsBtn.css('visibility', 'visible');
 
  }  
  function alt() { 
   score = score*17;
 
-  choice9.css('background','#FFD400');
-  choice9.css('color','blue');
+  choice9.css('background','#93A681');
+  choice9.css('color','#EBEBE9');
   resultsBtn.css('visibility', 'visible');
 
  }  
  function country() { 
   score = score*19;
 
-  choice10.css('background','#FFD400');
-  choice10.css('color','blue');
+  choice10.css('background','#93A681');
+  choice10.css('color','#EBEBE9');
   resultsBtn.css('visibility', 'visible');
 
  }  
 
 function checkResults(){
   if (score===7){
-    resultsBtn.css('background','#FFD400');
+    resultsBtn.css('background','#93A681');
     questionSet2.append(`
     <h3>Here are your results!</h3>
     <h4>It's a nice day outside, or inside. Either way, pump up the music and dance to enjoy it!</h4>
