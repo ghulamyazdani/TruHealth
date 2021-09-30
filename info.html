@@ -12,6 +12,8 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
     <title>TruHealth-info</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./Assets/Css/loader.css">
     <link href="./Assets/Css/quiz.css" rel="stylesheet" type="text/css" />
     <script src="./Script/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +22,8 @@
   
   </head>
 
-  <body>
+  <body onload="loaded()">
+    <div id="loader"></div>
     <header>
       <img src="./Assets/Images/TruHealth.png" alt="">
       <nav class="navbar">
@@ -95,5 +98,6 @@
       </div>
       
     </section>
+    <script src="./Script/script.js"></script>
 </body>
 </html>
