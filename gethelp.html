@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
       <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png">
@@ -24,16 +24,20 @@
 
   <body onload="loaded()">
     <div id="loader"></div>
-    <header>
-      <img src="./Assets/Images/TruHealth.png" alt="">
+    <header class="header">
       <nav class="navbar">
-        <ul>
-          <li class="home"><a href="index.html">Home</a></li>
+        <img src="./Assets/Images/TruHealth.png" alt="" class="image">
+        <ul class="nav-menu">
+          <li class="items"><a href="index.html">Home</a></li>
           <li class="items"><a href="./info.html">Info</a></li>
-          <li class="items "><a href="./quiz.html">Quiz</a></li>
-          <li class="items alt"><a href="./gethelp.html">Get Help</a></li>
+          <li class="items"><a href="./quiz.html">Quiz</a></li>
+          <li class="items"><a href="./gethelp.html">Get Help</a></li>
         </ul>
-  
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+       </div>
       </nav>
     </header>
     <section>
