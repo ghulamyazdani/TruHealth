@@ -1,3 +1,5 @@
+# TruHealth
+
 <p align="center">
 <a href="https://github.com/ghulamyazdani/TruHealth"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth"><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
