@@ -86,7 +86,7 @@ margin-top: 3%;
 div h1 {
   padding: 2rem;
   font-weight: bold;
-font-size: 2.5rem
+font-size: 2.5rem;
 }
 
 /*button hover effect*/
@@ -137,4 +137,19 @@ color: #EBEBE9;
 .btn.btn-primary:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+
+/* media queries */
+@media(max-width: 610px) {
+  .navbar{
+      font-size: 0.8rem;
+      width: 40%;
+  }
+ 
+}
+
+@media(max-width: 330px) {
+  
+
 }
