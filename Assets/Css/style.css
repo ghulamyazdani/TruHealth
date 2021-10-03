@@ -7,10 +7,11 @@
 body {
   background: url(../Images/Background.png) no-repeat;
   background-size:100% ;
-
+  padding-right: 1rem;
 }
 header{
   display: flex;
+  justify-content:space-between;
 }
 header img {
   margin-top: 1.5rem;
@@ -21,8 +22,7 @@ header a , .btn a {
     text-decoration-color: none;
     color: inherit;
   }
-header li {
-    
+header li {    
     display: inline-block;
     padding: 0em 0.5em;
   }
@@ -31,36 +31,34 @@ ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  padding-left: 1.25rem;
   flex-flow: unset;
-
-}
+  /* margin-right: 2rem; */
+  }
 
 .navbar{
   background: #49654C;
 box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.25);
 border-radius: 23px;
-height: 2.8rem;
-width: 40%;
-margin-left: 39rem;
+height:fit-content;
+width: fit-content;
+padding: 0.6rem 1rem;
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
-line-height: 28px;
 color: #EBEBE9;
 margin-top:1.5rem;
-justify-content: center;
+margin-right: 4rem;
+justify-content: space-around;
 }
 .alt {
   background: #EBEBE9;
   color: #253628;
   border-radius: 47px;
-  margin-top: 0.5rem;
 }
 .items{
-  margin-left: 7rem;
-  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   display: inline-block;
   padding: 0px 20px;
   
