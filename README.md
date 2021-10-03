@@ -12,7 +12,7 @@
 <a href="https://github.com/ghulamyazdani/TruHealth/stargazers"><img src="https://img.shields.io/github/stars/ghulamyazdani/TruHealth?color=0059b3"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth/network/members"><img src="https://img.shields.io/github/forks/ghulamyazdani/TruHealth?color=yellow"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth/graphs/contributors"><img src="https://img.shields.io/github/contributors/Dragsters/Nutrihelp?color=brightgreen"></a>
-<a href="https://github.com/Dragsters/Nutrihelp/issues"><img src="https://img.shields.io/github/issues/ghulamyazdani/TruHealth?color=0059b3"></a>
+<a href="https://github.com/ghulamyazdani/TruHealth/issues"><img src="https://img.shields.io/github/issues/ghulamyazdani/TruHealth?color=0059b3"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/ghulamyazdani/TruHealth?color=yellow"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth/pulls"><img src="https://img.shields.io/github/issues-pr/ghulamyazdani/TruHealth?color=brightgreen"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth/issues?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/ghulamyazdani/TruHealth?color=0059b3"></a>
@@ -31,15 +31,25 @@ An app for all those who care about their health.
 ## Tech Used
 | Frontend | HTML CSS JAVASCRIPT |
 |:-:|:-:|
-| Backend |  |
-| Database | |
+| Backend | bakend-api |
+
 
 ## Project Structure
-<p>
-     TruHealth <br>
-&nbsp&nbsp&nbsp|__ Assets (contains Css Images Favicon)<br>
-&nbsp&nbsp&nbsp|__ Script 
-</p> 
+
+```
+├───assets
+│   ├───css
+│   └───images
+|   └───favicon
+├───script
+│   ├───jquery.min.js              
+│   └─── quiz.js                
+|   └─── script.js
+
+```
+
+  
+
 <!--
 ##  ▶️ How to Run the Project
 **1.** Navigate to the project directory.
