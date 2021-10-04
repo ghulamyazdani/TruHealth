@@ -4,6 +4,10 @@
   margin: 0;
   padding: 0;
 }
+.main{
+  background: url(../Images/Background.png) no-repeat;
+  background-size: 100%;
+}
 body {
   background: url(../Images/Background2.png) no-repeat;
   background-size: 100%;
