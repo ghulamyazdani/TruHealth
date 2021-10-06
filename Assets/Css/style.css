@@ -609,9 +609,6 @@ color: #EBEBE9;
 /* media queries */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 550px) {
-  .navbar{
-      
-  }
  
 }
 /* Large devices (large desktops, 1200px and up) */
