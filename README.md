@@ -26,7 +26,7 @@ Everyone who is feeling their mental health is not going in the right direction 
 An app for all those who care about their health.
 -  how to deal with depression
 -  how to keep good mental health.
--  Project will also have misic features
+-  Project will also have music features
 -  Some motivational thoughts and quizzes section 
 
 ## Tech Used
