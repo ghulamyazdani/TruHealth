@@ -12,7 +12,7 @@ Refer to the following articles on the basics of Git and Github:
 ## 💥 Contribution
 
 * Take a look at the Existing [Issues](https://github.com/ghulamyazdani/TruHealth/issues) or Create your own Issues!
-* Participants have to ask the mentor ro assign the particular issue.
+* Participants have to ask the mentor to assign the particular issue.
 * Wait for the Issue to be assigned to you after which you can start working on it.
 * Fork the Repo and Create a Branch for aIssue that assigned you.
 * Read the [Code of Conduct](https://github.com/ghulamyazdani/TruHealth/blob/master/CODE_OF_CONDUCT.md)

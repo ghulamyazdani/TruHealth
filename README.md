@@ -1,4 +1,4 @@
-# TruHealth
+<h1 align="center">TruHealth</h1>
 
 <p align="center">
 <a href="https://github.com/ghulamyazdani/TruHealth"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a>
@@ -6,6 +6,7 @@
 <a href="https://github.com/ghulamyazdani/TruHealth"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth"><img src="https://img.shields.io/badge/maintenance-yes-brightgreen"></a>
 </p>
+
      
 <p align="center">
 <a href="https://github.com/ghulamyazdani/TruHealth/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ghulamyazdani/TruHealth?color=brightgreen"></a>
@@ -18,20 +19,20 @@
 <a href="https://github.com/ghulamyazdani/TruHealth/issues?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/ghulamyazdani/TruHealth?color=0059b3"></a>
 </p>    
 
-<h1 align="center">TruHealth</h1>
-An website to maintain mental health
 
+Everyone who is feeling their mental health is not going in the right direction or they are having depression!
 
 ## 🌟 About
 An app for all those who care about their health.
-- Track current diet plan
-- Get a personalized diet plan.
-- PLay quiz to maintain health 
+-  how to deal with depression
+-  how to keep good mental health.
+-  Project will also have misic features
+-  Some motivational thoughts and quizzes section 
 
 ## Tech Used
 | Frontend | HTML CSS JAVASCRIPT |
 |:-:|:-:|
-| Backend | bakend-api |
+| Backend | bakend-api & jQuery |
 
 
 ## Project Structure
@@ -77,14 +78,14 @@ __Note__ :
 
 
 
-<h1 align=center> project Admin </h1>
+<h1 align=center> Project Admin </h1>
 
 
   <div align="center">
 <table>
 <tr>
 
-<td align="center"><a href="https://github.com/ghulamyazdani"><img src="https://avatars.githubusercontent.com/u/55938346?v=4" width=150px height=150px /></a></br> <h4 style="color:white;">ghulamyazdani</h4>
+<td align="center"><a href="https://github.com/ghulamyazdani"><img src="https://avatars.githubusercontent.com/u/55938346?v=4" width=150px height=150px /></a></br> <h4 style="color:white;">Ghulamyazdani</h4>
 
      
 </tr>
