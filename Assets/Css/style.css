@@ -608,8 +608,23 @@ color: #EBEBE9;
 
 /* media queries */
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 550px) {
- 
+@media (max-width: 428px) {
+ .main{
+  background: url(../Images/Home-Mobile\ view.png) no-repeat;
+  background-size: 100% 100vh;
+}
+body {
+  background: url(../Images/Home-Mobile\ view.png) no-repeat;
+  background-size: 100% 100vh;
+}
+.wid-main{
+  width:80%;
+text-align: center;
+margin-left: 29%;
+border-radius: 61px;
+font-size: 0.7rem;
+margin-top: 3%;
+}
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 850px) {
