@@ -1,4 +1,3 @@
-// miriam
 var score = 0
 var questionSet1 = $('.firstQuestion');
 var questionSet2 = $('.secondQuestion');
@@ -353,12 +352,6 @@ width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encryp
   } 
 }
 
-
-
-
-
-// when you click the first round of buttons, the next question + round of buttons shows up
-//  if the score value = a certain number, a different spotify embed link will show up 
 
 
 
