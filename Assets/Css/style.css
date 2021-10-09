@@ -611,11 +611,11 @@ color: #EBEBE9;
 @media (max-width: 428px) {
  .main{
   background: url(../Images/Home-Mobile\ view.png) no-repeat;
-  background-size: 100% 100vh;
+  background-size: 200% 120vh;
 }
 body {
   background: url(../Images/Home-Mobile\ view.png) no-repeat;
-  background-size: 100% 100vh;
+  background-size: 200% 210vh;
 }
 .wid-main{
   width:80%;
@@ -624,6 +624,12 @@ margin-left: 29%;
 border-radius: 61px;
 font-size: 0.7rem;
 margin-top: 3%;
+}
+.navbar{
+  display: none;
+}
+.wid-main{
+  margin-left: 4%;
 }
 }
 /* Large devices (large desktops, 1200px and up) */
