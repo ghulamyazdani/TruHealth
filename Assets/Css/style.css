@@ -621,15 +621,32 @@ body {
   width:80%;
 text-align: center;
 margin-left: 29%;
-border-radius: 61px;
 font-size: 0.7rem;
 margin-top: 3%;
+margin-left: 2.5rem;
+}
+.container p{
+  margin: 1.2em;
 }
 .navbar{
   display: none;
 }
-.wid-main{
-  margin-left: 4%;
+header img {
+  max-width: 300px;
+  width: 60%;
+}
+center {
+  margin-top:1rem;
+}
+iframe{
+  margin-top: 1rem;
+  width: 60%;
+}
+.wid-info{
+  margin-top: 0;
+  width: 80%;
+  margin-left:10% ;
+  margin-right: 10%;
 }
 }
 /* Large devices (large desktops, 1200px and up) */
