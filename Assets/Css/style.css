@@ -21,6 +21,7 @@ body {
   z-index: 99999;
   
 }
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -45,7 +46,23 @@ header ul {
   flex-direction: row;
   flex-flow: unset;
 }
-
+/* Navbar */
+.menu{
+  position: absolute;
+  top:1.7rem;
+  right: 1rem;
+  display:none;
+  flex-direction: column;
+  justify-content: space-between;
+  width:27px;
+  height:18px;
+}
+.menu .bar{
+  height: 3px;
+  width: 100%;
+  background-color: #253628;
+  border-radius: 10px;
+}
 .navbar {
   background: #49654C;
   box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.25);
@@ -635,11 +652,33 @@ font-size: 24px;
 padding-bottom: 0;
 }
 .navbar{
-  display: none;
+  display: flex; 
+  background-color: white;
+  margin-top: 4rem;
+  width: 200%;  
+  box-shadow:none;
+  border-radius: none;
+  
+}
+.navbar ul{
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  align-items: flex-start;
+  
+}
+.navbar li{
+  width: 100%;
+  padding: .5rem 1rem;
+  align-items: flex-start;
+}
+.alt{
+  border-radius: none;
 }
 header img {
   max-width: 300px;
   width: 75%;
+  position: absolute;
 }
 center {
   margin-top:1rem;
@@ -654,6 +693,13 @@ iframe{
   margin-left:10% ;
   margin-right: 10%;
 }
+.menu{
+  display: flex;
+}
+.wid-info{
+  width: 110%;
+}
+
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 850px) {
