@@ -621,19 +621,25 @@ body {
   width:80%;
 text-align: center;
 margin-left: 29%;
-font-size: 0.7rem;
 margin-top: 3%;
 margin-left: 2.5rem;
 }
 .container p{
   margin: 1.2em;
+  font-size: 0.8rem;
+}
+div h1{
+  font-style: normal;
+font-weight: bold;
+font-size: 24px;
+padding-bottom: 0;
 }
 .navbar{
   display: none;
 }
 header img {
   max-width: 300px;
-  width: 60%;
+  width: 75%;
 }
 center {
   margin-top:1rem;
