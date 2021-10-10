@@ -623,6 +623,82 @@ color: #EBEBE9;
   right: 0;
 }
 
+
+.icon{
+  color: rgb(121, 107, 107)  ;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.icon.cancel-btn{
+  position: absolute;
+  right: 12px;
+  top: 10px;
+}
+.navbar.sticky .icon.cancel-btn{
+  top: 10px;
+}
+@media (max-width: 868px) {
+  .navbar{
+    background-color: white;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 0;
+    margin-right: 0;
+    z-index: 10000000000000;
+  }
+  body.disabledScroll{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .icon.cancel-btn{
+    display: none;
+  }
+  .icon.cancel-btn.show{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #49654C;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+    z-index: 100000;
+    color: #000000;
+  }
+  .navbar.sticky .menu-list{
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+  .navbar .menu-list.active{
+    clip-path: circle(75%);
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+  }
+}
+
+
 /* media queries */
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 428px) {
@@ -651,34 +727,11 @@ font-weight: bold;
 font-size: 24px;
 padding-bottom: 0;
 }
-.navbar{
-  display: flex; 
-  background-color: white;
-  margin-top: 4rem;
-  width: 200%;  
-  box-shadow:none;
-  border-radius: none;
-  
-}
-.navbar ul{
-  display: flex;
-  flex-direction: column;
-  color: #000000;
-  align-items: flex-start;
-  
-}
-.navbar li{
-  width: 100%;
-  padding: .5rem 1rem;
-  align-items: flex-start;
-}
-.alt{
-  border-radius: none;
-}
+
 header img {
   max-width: 300px;
   width: 75%;
-  position: absolute;
+  
 }
 center {
   margin-top:1rem;
@@ -687,17 +740,24 @@ iframe{
   margin-top: 1rem;
   width: 60%;
 }
-.wid-info{
-  margin-top: 0;
-  width: 80%;
-  margin-left:10% ;
-  margin-right: 10%;
+
+.wid{
+  width: 88%;
+  margin-left: 6%;
 }
 .menu{
   display: flex;
 }
-.wid-info{
-  width: 110%;
+.video-recom {
+  margin-top: 0;
+  font-weight: bold;
+}
+.align-gallery {
+  margin-top: 0;
+  width: 80%;
+  margin-left: 0;
+  padding-bottom: 0;
+  margin-left: 2rem;
 }
 
 }

@@ -18,24 +18,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./Assets/Css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <title>TruHealth</title>
 </head>
 <body class="main" onload="loaded()">
   <div id="loader"></div>
   <header>
     <a href="#"><img src="./Assets/Images/TruHealth.png" alt="TruHealth"></a>
-    <a href="#" class="menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
     <nav class="navbar">
-      <ul>
-        <li class="items alt"><a href="index.html">Home</a></li>
-        <li class="items"><a href="./info.html">Info</a></li>
-        <li class="items"><a href="quiz.html">Quiz</a></li>
-        <li class="items"><a href="./gethelp.html">Get Help</a></li>
-      </ul>
+      <div class="content">
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li class="items alt"><a href="./index.html">Home</a></li>
+          <li class="items"><a href="./info.html">Info</a></li>
+          <li class="items"><a href="./quiz.html">Quiz</a></li>
+          <li class="items"><a href="./gethelp.html">GetHelp</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </nav>
   </header>
   <section>
