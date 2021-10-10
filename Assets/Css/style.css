@@ -623,9 +623,14 @@ color: #EBEBE9;
   right: 0;
 }
 
-
+.navbar.sticky .icon.cancel-btn{
+  top: 10px;
+}
+.sticky{
+  display: none;
+}
 .icon{
-  color: rgb(121, 107, 107)  ;
+  color: rgb(15, 15, 15)  ;
   font-size: 20px;
   cursor: pointer;
   display: none;
@@ -674,7 +679,7 @@ color: #EBEBE9;
     left: 0;
     height: 100vh;
     width: 100%;
-    background: #49654C;
+    background: white;
     display: flex;
     flex-direction: column;
     padding: 40px 0;
@@ -759,7 +764,9 @@ iframe{
   padding-bottom: 0;
   margin-left: 2rem;
 }
-
+.wid-info{
+  margin-top: 2rem;
+}
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 850px) {
