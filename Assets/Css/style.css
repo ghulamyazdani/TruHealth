@@ -231,7 +231,10 @@ margin-top: 3%;
   margin-top: 1rem;
   margin-left: 2rem;
 }
-
+.wid-main p {
+  padding-top: 0;
+  padding: 2rem;
+}
 div h1 {
   padding: 1.4rem;
   font-weight: bold;
@@ -686,7 +689,6 @@ color: #EBEBE9;
     text-align: center;
     clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
     transition: all 0.3s ease;
-    z-index: 100000;
     color: #000000;
   }
   .navbar.sticky .menu-list{
