@@ -689,6 +689,7 @@ color: #EBEBE9;
     text-align: center;
     clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
     transition: all 0.3s ease;
+    z-index: -1;
     color: #000000;
   }
   .navbar.sticky .menu-list{
