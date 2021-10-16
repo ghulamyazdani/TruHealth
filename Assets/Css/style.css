@@ -776,3 +776,12 @@ iframe{
   
 
 }
+/* Get help Headings */
+.get-help h3 a{
+  text-decoration:none;
+  color: #49654C;
+}
+.get-help a:hover{
+  color:white;
+}
+/* End of Get help Headings */
