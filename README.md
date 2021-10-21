@@ -9,7 +9,7 @@
 
      
 <p align="center">
-<a href="https://github.com/ghulamyazdani/TruHealth/LICENSE"><img src="https://img.shields.io/github/license/ghulamyazdani/TruHealth?color=brightgreen"></a>
+<a href="https://github.com/ghulamyazdani/TruHealth/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ghulamyazdani/TruHealth?color=brightgreen"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth/stargazers"><img src="https://img.shields.io/github/stars/ghulamyazdani/TruHealth?color=0059b3"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth/network/members"><img src="https://img.shields.io/github/forks/ghulamyazdani/TruHealth?color=yellow"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth/graphs/contributors"><img src="https://img.shields.io/github/contributors/Dragsters/Nutrihelp?color=brightgreen"></a>
