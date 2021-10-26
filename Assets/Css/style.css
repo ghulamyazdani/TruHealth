@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .main{
   background: url(../Images/Background.png) no-repeat;
@@ -209,17 +210,17 @@ center img {
 }
 .wid-main{
   width:40%;
-text-align: center;
-margin-left: 29%;
-border-radius: 61px;
-font-size: 1.1rem;
-margin-top: 3%;
+  min-width: 537px;
+  text-align: center;
+  border-radius: 61px;
+  font-size: 1.1rem;
+  margin: 1.8% auto;
 }
 .wid {
-  margin-top: 2rem;
   width: 60%;
-  margin-left: 20%;
-  padding-bottom: 3rem;
+  margin: 2rem auto 1rem;
+  min-width: 705px;
+  padding: 0 .7rem 3rem 0;
 }
 .wid-info {
   width: 80%;
@@ -646,9 +647,46 @@ color: #EBEBE9;
 .navbar.sticky .icon.cancel-btn{
   top: 10px;
 }
+
+@media (max-width: 1050px){
+  header img{
+    width: 90%;
+  }
+  .items {
+    padding: 0px 20px 1px 2%;
+    font-size: 20px;
+  }
+  .items:nth-child(4){
+    padding: 0px 20px 1px 9.3px;
+  }
+  .navbar{
+    margin-right: 50px;
+    min-width: 492px;
+  }
+}
+@media (max-width: 920px){
+  .items {
+    padding: 0px 20px 1px 2%;
+  }
+  .items:nth-child(5){
+    padding: 0px 20px 1px 1.2%;
+  }
+}
+
+@media (max-width: 868px) {
+  body{
+    overflow-x: visible;
+  }
+  header img{
+    width: 76%;
+  }
+}
+
 @media (max-width: 868px) {
   .navbar{
     background-color: white;
+    width: fit-content;
+    min-width: 0px;
     border-radius: 0;
     box-shadow: none;
     margin-top: 0;
@@ -785,3 +823,14 @@ iframe{
   color:white;
 }
 /* End of Get help Headings */
+
+@media (max-width: 800px){
+  header img {
+    max-width: 340px;
+    margin: 10px 0 0 10px;
+  }
+  .wid-main, .wid{
+    width: 69%;
+    min-width: 400px;
+  }
+}
