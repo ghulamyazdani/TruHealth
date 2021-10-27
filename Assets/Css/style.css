@@ -834,7 +834,7 @@ iframe{
     margin: 10px 0 0 10px;
   }
   .wid-main{
-    min-width: 85%;
+    width: 85%;
   }
   .wid-main p {
     padding: 2rem 3% 1rem;
