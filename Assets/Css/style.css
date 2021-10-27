@@ -836,4 +836,7 @@ iframe{
   .wid-main{
     min-width: 85%;
   }
+  .wid-main p {
+    padding: 2rem 3% 1rem;
+  }
 }
