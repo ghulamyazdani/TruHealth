@@ -823,14 +823,17 @@ iframe{
   color:white;
 }
 /* End of Get help Headings */
-
-@media (max-width: 800px){
+@media (max-width: 810px) {
+  .wid {
+    min-width: 85%;
+  }
+}
+@media (max-width: 700px) {
   header img {
     max-width: 340px;
     margin: 10px 0 0 10px;
   }
-  .wid-main, .wid{
-    width: 69%;
-    min-width: 400px;
+  .wid-main{
+    min-width: 85%;
   }
 }
