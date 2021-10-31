@@ -1,3 +1,6 @@
+/* This is the backend code written in javascript running the quiz.
+As per user input, firstly a score is calculated, after that a result is printed using the score and else-if conditions
+*/
 var score = 0
 var questionSet1 = $('.firstQuestion');
 var questionSet2 = $('.secondQuestion');
