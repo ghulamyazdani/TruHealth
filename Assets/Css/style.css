@@ -206,11 +206,13 @@ center img {
   font-size: 1rem;
   background: rgba(192, 206, 178, 0.76);
   border-radius: 16px;
+  width: 90%;
+  margin: 0 auto;
 }
 .wid-main{
-  width:40%;
-text-align: center;
-margin-left: 29%;
+  width:70%;
+
+text-align:center;
 border-radius: 61px;
 font-size: 1.1rem;
 margin-top: 3%;
@@ -646,7 +648,7 @@ color: #EBEBE9;
 .navbar.sticky .icon.cancel-btn{
   top: 10px;
 }
-@media (max-width: 868px) {
+@media (max-width:1115px) {
   .navbar{
     background-color: white;
     border-radius: 0;
@@ -705,11 +707,17 @@ color: #EBEBE9;
     font-size: 23px;
   }
 }
+@media (max-width:1323px) and (min-width:429px){
 
+  .main{
+    background-size: 100% 100%;
+  }
+  
+  }
 
 /* media queries */
 /* Small devices (tablets, 768px and up) */
-@media (max-width: 428px) {
+@media (max-width: 660px) {
  .main{
   background: url(../Images/Home-Mobile\ view.png) no-repeat;
   background-size: 200% 120vh;
