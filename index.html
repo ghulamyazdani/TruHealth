@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-32x32.png">
-  <link rel="manifest" href="./Assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <!-- css -->
-  <link rel="stylesheet" href="./Assets/Css/style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <title>TruHealth</title>
-</head>
-<body class="main" onload="loaded()">
-  <div id="loader"></div>
-  <header>
-    <a href="#"><img src="./Assets/Images/TruHealth.png" alt="TruHealth"></a>
-    <nav class="navbar">
-      <div class="content">
-        <ul class="menu-list">
-          <div class="icon cancel-btn">
-            <i class="fas fa-times"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-32x32.png" />
+    <link rel="manifest" href="./Assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>TruHealth</title>
+  </head>
+  <body class="main" onload="loaded()">
+    <div id="loader"></div>
+    <header>
+      <a href="#"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
+      <nav class="navbar">
+        <div class="content">
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li class="items alt"><a href="./index.html">Home</a></li>
+            <li class="items"><a href="./info.html">Info</a></li>
+            <li class="items"><a href="./quiz.html">Quiz</a></li>
+            <li class="items"><a href="./gethelp.html">GetHelp</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
           </div>
-          <li class="items alt"><a href="./index.html">Home</a></li>
-          <li class="items"><a href="./info.html">Info</a></li>
-          <li class="items"><a href="./quiz.html">Quiz</a></li>
-          <li class="items"><a href="./gethelp.html">GetHelp</a></li>
-        </ul>
-        <div class="icon menu-btn">
-          <i class="fas fa-bars"></i>
         </div>
+      </nav>
+    </header>
+    <section>
+      <div class="wid-main container">
+        <h1>MENTAL HEALTH IS IMPORTANT</h1>
+        <p>
+          Due to the prolonged pandemic, people are increasingly feeling isolated,which is likely to worsen their mental
+          health.we feel like everything is just messed up and we can’t do anything about it and this feeling brings
+          depression and mental illness.This website will be having information about how to deal with depression and
+          how to keep good mental health. Experts say music really helps people who are going through any mental health
+          issues so taking that in mind we have added quiz that will detect your mood and play songs respectively.To
+          boost morale/motivation i have added motivational thoughts as well.
+        </p>
+        <button class="btn btn-primary">
+          <span><a href="./info.html">Read more</a></span>
+        </button>
       </div>
-    </nav>
-  </header>
-  <section>
-    <div class="wid-main container">
-      <h1>MENTAL HEALTH IS IMPORTANT</h1>
-      <p>Due to the prolonged pandemic, people are increasingly feeling isolated,which is likely to worsen their mental health.we feel like everything is just 
-        messed up and we can’t do anything about it and this feeling brings depression and mental illness.This website will be having information about how to deal with depression and how to keep good mental health. Experts say 
-        music really helps people who are going through any mental health issues so taking that in mind we have added quiz that will detect your mood and play songs respectively.To boost morale/motivation i hvae added motivational thoughts as well.</p>
-      <button class="btn btn-primary"><span><a href="./info.html">Read more</a></span></button>   
-    </div>  
-  </section>
-<script src="./Script/script.js"></script>
-</body>
+    </section>
+    <script src="./Script/script.js"></script>
+  </body>
 </html>
