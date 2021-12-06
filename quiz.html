@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-     <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-32x32.png">
-  <link rel="manifest" href="./Assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-32x32.png" />
+    <link rel="manifest" href="./Assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <title>TruHealth-Quiz</title>
     <!-- css -->
     <link href="./Assets/Css/style.css" rel="stylesheet" type="text/css" />
     <script src="./Script/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   </head>
 
   <body onload="loaded()">
     <div id="loader"></div>
     <header>
-      <a href="./index.html"><img src="./Assets/Images/TruHealth.png" alt="TruHealth"></a>
+      <a href="./index.html"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
       <nav class="navbar">
         <div class="content">
           <ul class="menu-list">
@@ -43,42 +42,42 @@
         </div>
       </nav>
     </header>
-    <center> 
-      <h1> The Quiz! </h1>
-      <section class = "fillerQuestion">
-        <h3> How was your day today?</h3>
-         <button id='btn11' type="button" onclick="filler1()">Good!</button>
-         <button id='btn12' type="button" onclick="filler2()">In the middle</button> 
-         <button id='btn13' type="button" onclick="filler3()">Not good...</button>
-         </section>
+    <center>
+      <h1>The Quiz!</h1>
+      <section class="fillerQuestion">
+        <h3>How was your day today?</h3>
+        <button id="btn11" type="button" onclick="filler1()">Good!</button>
+        <button id="btn12" type="button" onclick="filler2()">In the middle</button>
+        <button id="btn13" type="button" onclick="filler3()">Not good...</button>
+      </section>
 
-      <section class = "firstQuestion">
+      <section class="firstQuestion">
         <h3>How are you feeling right now?</h3>
-           
-         <button id='btn1' type="button" onclick="happy()">Happy/Content</button> 
-         <button id='btn2' type="button" onclick="sad()">Sad/Discontent</button>
-         <button id='btn3' type="button" onclick="angry()">Angry/Irritated</button>
-         <button id='btn4' type="button" onclick="nervous()">Nervous/Tense</button> 
-         <button id='btn5' type="button" onclick="sleepy()">Sleepy/Tired</button>
-            <div id="results"></div>
-         </section>
-        
-      <section class = "secondQuestion">
-        <h3> What genres do you typically like? </h3>
-          <button id='btn6' type="button" onclick="rock()">Rock</button> 
-         <button id='btn7' type="button" onclick="rap()">Hip-hop/Rap</button>
-         <button id='btn8' type="button" onclick="pop()">Pop</button>
-         <button id='btn9' type="button" onclick="alt()">Alternative</button> 
-         <button id='btn10' type="button" onclick="country()">Country</button>
-         </section>
+
+        <button id="btn1" type="button" onclick="happy()">Happy/Content</button>
+        <button id="btn2" type="button" onclick="sad()">Sad/Discontent</button>
+        <button id="btn3" type="button" onclick="angry()">Angry/Irritated</button>
+        <button id="btn4" type="button" onclick="nervous()">Nervous/Tense</button>
+        <button id="btn5" type="button" onclick="sleepy()">Sleepy/Tired</button>
+        <div id="results"></div>
+      </section>
+
+      <section class="secondQuestion">
+        <h3>What genres do you typically like?</h3>
+        <button id="btn6" type="button" onclick="rock()">Rock</button>
+        <button id="btn7" type="button" onclick="rap()">Hip-hop/Rap</button>
+        <button id="btn8" type="button" onclick="pop()">Pop</button>
+        <button id="btn9" type="button" onclick="alt()">Alternative</button>
+        <button id="btn10" type="button" onclick="country()">Country</button>
+      </section>
       <section class="Results-show"></section>
-      <section class = "Results">
-        <button id='btn11' type="button" onclick="checkResults()">Get my results!</button>
-          </section>
+      <section class="Results">
+        <button id="btn11" type="button" onclick="checkResults()">Get my results!</button>
+      </section>
     </center>
 
-<footer></footer>
-<script src="./Script/script.js"></script>
-<script src="./Script/quiz.js"></script>
-</body>
+    <footer></footer>
+    <script src="./Script/script.js"></script>
+    <script src="./Script/quiz.js"></script>
+  </body>
 </html>
