@@ -791,3 +791,8 @@ html {
   color: white;
 }
 /* End of Get help Headings */
+
+iframe {
+  border-radius: 12px;
+  margin-top: 1rem;
+}
