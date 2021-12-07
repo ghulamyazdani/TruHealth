@@ -67,10 +67,12 @@ An app for all those who care about their health.
 <br>
 
 <br>
-## 🙌 Contributors
+<hr>
+<h1 align=left> 🙌 Contributors</h1>
 
 <a href="https://github.com/ghulamyazdani/TruHealth/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ghulamyazdani/TruHealth" />
 </a>
+<br>
 
 Made with [contrib.rocks](https://contrib.rocks).
