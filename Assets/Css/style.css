@@ -357,6 +357,9 @@ html {
   position: absolute;
 }
 
+.video-gallery label:hover{
+  background-color: #49654c;
+}
 .grid-row {
   display: block;
   height: 56vw;
