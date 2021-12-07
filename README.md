@@ -54,7 +54,7 @@ An app for all those who care about their health.
 **1.** Navigate to the project directory.
 -->
 
-<h1 align=center> Project Admin </h1>
+<h1 align=center> 👨‍💻 Project Admin </h1>
 
   <div align="center">
 <table>
@@ -65,6 +65,9 @@ An app for all those who care about their health.
 </tr>
 </table>
 <br>
+
+<br>
+## 🙌 Contributors
 
 <a href="https://github.com/ghulamyazdani/TruHealth/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ghulamyazdani/TruHealth" />
