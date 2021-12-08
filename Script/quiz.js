@@ -1,9 +1,9 @@
 var score = 0
-var questionSet0=$('.fillerQuestion');
+var questionSet0 = $('.fillerQuestion');
 var questionSet1 = $('.firstQuestion');
 var questionSet2 = $('.secondQuestion');
 var resultsBtn = $('.Results');
-var resultsShow=$('.Results-show');
+var resultsShow = $('.Results-show');
 
 var choice1 = $("#btn1");
 var choice2 = $("#btn2");
@@ -22,246 +22,246 @@ var choice12 = $('#btn12');
 var choice13 = $('#btn13');
 
 function filler1() {
-  questionSet1.css('visibility','visible');
-  choice11.css('background','#93A681');
-  choice11.css('color','#EBEBE9');
+  questionSet1.css('visibility', 'visible');
+  choice11.css('background', '#93A681');
+  choice11.css('color', '#EBEBE9');
 }
 function filler2() {
-  questionSet1.css('visibility','visible');
-  choice12.css('background','#93A681');
-  choice12.css('color','#EBEBE9');
+  questionSet1.css('visibility', 'visible');
+  choice12.css('background', '#93A681');
+  choice12.css('color', '#EBEBE9');
 }
 function filler3() {
-  questionSet1.css('visibility','visible');
-  choice13.css('background','#93A681');
-  choice13.css('color','#EBEBE9');
+  questionSet1.css('visibility', 'visible');
+  choice13.css('background', '#93A681');
+  choice13.css('color', '#EBEBE9');
 }
 
 function happy() {
   score = 1
 
- choice1.css('background','#93A681');
-  choice1.css('color','#EBEBE9');
- questionSet2.css('visibility','visible');
-  
-   
- }
+  choice1.css('background', '#93A681');
+  choice1.css('color', '#EBEBE9');
+  questionSet2.css('visibility', 'visible');
 
- function sad() { 
+
+}
+
+function sad() {
   score = 2
 
-  choice2.css('background','#93A681');
-  choice2.css('color','#EBEBE9');
- questionSet2.css('visibility','visible');
+  choice2.css('background', '#93A681');
+  choice2.css('color', '#EBEBE9');
+  questionSet2.css('visibility', 'visible');
 
- } 
+}
 
- function angry() { 
+function angry() {
   score = 3
 
-  choice3.css('background','#93A681');
-  choice3.css('color','#EBEBE9');
- questionSet2.css('visibility','visible');
+  choice3.css('background', '#93A681');
+  choice3.css('color', '#EBEBE9');
+  questionSet2.css('visibility', 'visible');
 
- } 
+}
 
-  function nervous() { 
+function nervous() {
   score = 4
 
-  choice4.css('background','#93A681');
-  choice4.css('color','#EBEBE9');
- questionSet2.css('visibility','visible');
+  choice4.css('background', '#93A681');
+  choice4.css('color', '#EBEBE9');
+  questionSet2.css('visibility', 'visible');
 
- }  
+}
 
-  function sleepy() { 
+function sleepy() {
   score = 5
 
-  choice5.css('background','#93A681');
-  choice5.css('color','#EBEBE9');
- questionSet2.css('visibility','visible');
+  choice5.css('background', '#93A681');
+  choice5.css('color', '#EBEBE9');
+  questionSet2.css('visibility', 'visible');
 
- }  
+}
 
- function rock() { 
-  score = score*7;
+function rock() {
+  score = score * 7;
 
-  choice6.css('background','#93A681');
-  choice6.css('color','#EBEBE9');
+  choice6.css('background', '#93A681');
+  choice6.css('color', '#EBEBE9');
   resultsBtn.css('visibility', 'visible');
 
 
- }  
- function rap() { 
-  score = score*11;
+}
+function rap() {
+  score = score * 11;
 
-  choice7.css('background','#93A681');
-  choice7.css('color','#EBEBE9');
+  choice7.css('background', '#93A681');
+  choice7.css('color', '#EBEBE9');
   resultsBtn.css('visibility', 'visible');
 
- }  
- function pop() { 
-  score = score*13;
+}
+function pop() {
+  score = score * 13;
 
-  choice8.css('background','#93A681');
-  choice8.css('color','#EBEBE9');
+  choice8.css('background', '#93A681');
+  choice8.css('color', '#EBEBE9');
   resultsBtn.css('visibility', 'visible');
 
- }  
- function alt() { 
-  score = score*17;
+}
+function alt() {
+  score = score * 17;
 
-  choice9.css('background','#93A681');
-  choice9.css('color','#EBEBE9');
+  choice9.css('background', '#93A681');
+  choice9.css('color', '#EBEBE9');
   resultsBtn.css('visibility', 'visible');
 
- }  
- function country() { 
-  score = score*19;
+}
+function country() {
+  score = score * 19;
 
-  choice10.css('background','#93A681');
-  choice10.css('color','#EBEBE9');
+  choice10.css('background', '#93A681');
+  choice10.css('color', '#EBEBE9');
   resultsBtn.css('visibility', 'visible');
 
- }  
+}
 
-function checkResults(){
-  if(questionSet0.css('display')==="inline"&&questionSet1.css('display')==="inline"&&questionSet2.css('display')==="inline"){
-    questionSet0.css('display','none')
-    questionSet1.css('display','none')
-    questionSet2.css('display','none')
+function checkResults() {
+  if (questionSet0.css('display') === "inline" && questionSet1.css('display') === "inline" && questionSet2.css('display') === "inline") {
+    questionSet0.css('display', 'none')
+    questionSet1.css('display', 'none')
+    questionSet2.css('display', 'none')
 
   }
-  else if(questionSet0.css('display')==="none"&&questionSet1.css('display')==="none"&&questionSet2.css('display')==="none"){
-    resultsBtn.innerHTML="Check My responses";
-    questionSet0.css('display','inline')
-    questionSet1.css('display','inline')
-    questionSet2.css('display','inline')
+  else if (questionSet0.css('display') === "none" && questionSet1.css('display') === "none" && questionSet2.css('display') === "none") {
+    resultsBtn.innerHTML = "Check My responses";
+    questionSet0.css('display', 'inline')
+    questionSet1.css('display', 'inline')
+    questionSet2.css('display', 'inline')
 
   }
-  if (score===7){
+  if (score === 7) {
     // resultsBtn.css('background','#93A681');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
     <h4>It's a nice day outside, or inside. Either way, pump up the music and dance to enjoy it!</h4>
     <iframe src="https://open.spotify.com/embed/playlist/071qTrW2k22BfUqwpqVyFb" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `);
-  } else if (score===11){
+  } else if (score === 11) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
     <h4>Glad you're feeling good. Treat yourself to something nice today while you enjoy these sick beats. You deserve it :D</h4>
     <iframe src="https://open.spotify.com/embed/playlist/3NrmIll0DsfwYEQg2JNSPE" 
     width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `);
-  } else if (score===13){
+  } else if (score === 13) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
     <h4>Happy you're doing well today! Hit up a friend and share something cool with them (they might enjoy your playlist too)</h4>
     <iframe src="https://open.spotify.com/embed/playlist/6XXO0Xkyp1OhSqibqdtqNF" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `);
-  } else if (score===17){
+  } else if (score === 17) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
     <h4>Take a second out of your day to appreciate something good that happened today, no matter how small it was! Don't forget moments like these. </h4><iframe src="https://open.spotify.com/embed/playlist/5Yd7Q4JW3sHapDSSzS0nCx" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
-  } else if (score===19){
+  } else if (score === 19) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
     <h4>There's something refreshing about spending time outside. Channel your inner country and breathe in the open road! </h4><iframe src="https://open.spotify.com/embed/playlist/4C0I1PcvcNotVDfSXRRogI" 
     width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
-  } else if (score===14){
+  } else if (score === 14) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
     <h4>It's okay to feel down sometimes. Take some time to acknowledge how you feel and let it all out. You got this :)</h4>
     <iframe src="https://open.spotify.com/embed/playlist/6dx08QdKiNd2F01AWilGSy" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
-  } else if (score===22){
+  } else if (score === 22) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>There's no shame in being upset. Something that helps me: the worst days are still only 24 hours long! We believe in you <3 </h4>
      <iframe src="https://open.spotify.com/embed/playlist/7hkb1yqHpauYPoetJFyQJM" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
-  } else if (score===26){
+  } else if (score === 26) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>"This is for everybody going through tough times, believe me, been there done that, but everyday above ground is a great day. Remember that" -- The legend Pitbull Mr. Worldwide</h4><iframe src="https://open.spotify.com/embed/playlist/0642Z3mSc6R2cVlqGPxKz1" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
-  } else if (score===34){
+  } else if (score === 34) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>It's okay if you need time by yourself, but theres no shame in relying on friends, family or others if you have to. </h4>
      <iframe src="https://open.spotify.com/embed/playlist/1wUaUuVOLXWnMfcmHr1doU" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
-  } else if (score===38){
+  } else if (score === 38) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Even cowboys get the blues...if you need to be distracted, try some relaxing hobbies to pass the time. </h4>
     <iframe src="https://open.spotify.com/embed/playlist/1Ay0VQZXLOrkzqCyERcKA5" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
-  } else if (score===21){
+  } else if (score === 21) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Listen to something loud and fast! Being angry sometimes is okay too.</h4>
      <iframe src="https://open.spotify.com/embed/playlist/1jmwNo7A5rq3dZKUenLmgf" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
-  } else if (score===33){
+  } else if (score === 33) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Your feelings are valid no matter what. One way to let it out is to exercise (enjoy this playlist while you do, haha)</h4>
      <iframe src="https://open.spotify.com/embed/playlist/5voJxVydB212pyb0v5CQ5x" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
     `)
-  } else if (score===39){
+  } else if (score === 39) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Don't be afraid to distance yourself from a stressful situation if you have to. Your mental health impacts a lot of your physical health as well. </h4><iframe src="https://open.spotify.com/embed/playlist/1UqANNNyB2HqPQzdKWNkFD" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
-  } else if (score===51){
+  } else if (score === 51) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Take a second to breathe and pause to assess the situation. Sometimes taking it slow is a good thing when you're angry as well.</h4><iframe src="https://open.spotify.com/embed/playlist/6E5vzipZVkkdLDgKCrlsgn" 
     width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
     `)
-  } else if (score===57){
+  } else if (score === 57) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Try writing out why you're mad in a letter or email. Once you've perfected and completed it, delete it once you're ready to let go. </h4>
      <iframe src="https://open.spotify.com/embed/playlist/1x8oaRzFEgH4Bb8XwPrtQ7" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
-  } else if (score===28){
+  } else if (score === 28) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Jitters are completely normal. Distract yourself with something fast and loud!</h4>
@@ -269,53 +269,53 @@ function checkResults(){
     width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
     `)
-  } else if (score===44){
+  } else if (score === 44) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>If something has the potential to go horribly wrong, it also has the potential of going fantastically well. You never know! </h4>
      <iframe src="https://open.spotify.com/embed/playlist/5yMOriqeGLjcC8ZfkGCuGe" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
     `)
-  } else if (score===52){
+  } else if (score === 52) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Make sure to treat yourself once you've finished what you're nervous or tense about. Get excited for it!</h4>
      <iframe src="https://open.spotify.com/embed/playlist/67GiPoY4OEO5RzrigwDlBk" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
 
-  } else if (score===68){
+  } else if (score === 68) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Talk it out with a friend! Being nervous or tense together is better than worrying alone. </h4>
      <iframe src="https://open.spotify.com/embed/playlist/16NnaEucp5u5GG5K9NwirB" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
     `)
-  } else if (score===76){
+  } else if (score === 76) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4> Express how you feel in whatever way you can. Make charts to organize your thoughts, or write emails or letters to yourself. Surprising how much it can help!</h4>
      <iframe src="https://open.spotify.com/embed/playlist/3m8qdIVMIjqoye9qWVZnMP" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `)
-  } else if (score===19){
+  } else if (score === 19) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>You've been working hard. Go get some rest! Your body will thank you.</h4>
      <iframe src="https://open.spotify.com/embed/playlist/0JROZmzXdpVRFkE7JeKEJJ" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
     `)
-  } else if (score===35){
+  } else if (score === 35) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Need to go to sleep but can't? Try tensing your muscles for a few seconds, then releasing them completely. Repeat a few times, and you'll be asleep before you know it! Goodnight~~</h4>
@@ -323,18 +323,18 @@ function checkResults(){
 
 
     `)
-  } else if (score===55){
+  } else if (score === 55) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Sometimes life gets in the way of a good sleep schedule. Little by little, take the time to make relaxing part of your day. </h4>
      <iframe src="https://open.spotify.com/embed/playlist/13kyz1Ys4DMDmBmjwSZm85" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
     `)
-  } else if (score===65){
+  } else if (score === 65) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>You've been working hard. Go get some rest! Your body will thank you.</h4>
@@ -342,9 +342,9 @@ function checkResults(){
 
 
     `)
-  } else if (score===85){
+  } else if (score === 85) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Studies have shown that people who sleep between 8-9.5 hours at night tend to wake up happier. Gotta start somewhere!</h4>
@@ -352,9 +352,9 @@ function checkResults(){
 
 
     `)
-  } else if (score===95){
+  } else if (score === 95) {
     // resultsBtn.css('background','#FFD400');
-    resultsBtn.css('visibility','hidden');
+    resultsBtn.css('visibility', 'hidden');
     resultsShow.append(`
     <h3>Here are your results!</h3>
      <h4>Time to hit the hay...give your eyes a break! You'll see how much better you'll feel :)</h4>
@@ -364,7 +364,7 @@ width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encryp
 
 
     `)
-  } 
+  }
 }
 
 
