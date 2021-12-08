@@ -29,13 +29,13 @@ An app for all those who care about their health.
 - Project will also have music features
 - Some motivational thoughts and quizzes section
 
-## Tech Used
+## ⚙ Tech Used
 
 | Frontend | HTML CSS JAVASCRIPT |
 | :------: | :-----------------: |
 | Backend  | bakend-api & jQuery |
 
-## Project Structure
+## 🏗 Project Structure
 
 ```
 ├───assets
