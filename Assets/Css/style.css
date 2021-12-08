@@ -211,7 +211,7 @@ center img {
 /* Container */
 .container {
   font-size: 1rem;
-  background: rgba(192, 206, 178, 0.76);
+  background: rgba(192, 206, 178, 1);
   border-radius: 16px;
   width: 90%;
   margin: 0 auto;
