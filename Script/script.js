@@ -22,6 +22,4 @@ cancelBtn.onclick = () => {
   body.classList.remove("disabledScroll");
 }
 
-window.onscroll = () => {
-  this.scrollY > 10 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-}
+
