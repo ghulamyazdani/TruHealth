@@ -793,3 +793,12 @@ iframe{
   color:white;
 }
 /* End of Get help Headings */
+
+.footer{
+  background-color: #ccdbcf;
+  height: 5rem;
+  margin-top: 5rem;
+  /* align-items: center; */
+  text-align: center;
+  padding-top: 2rem;
+}
