@@ -359,6 +359,9 @@ html {
 
 .video-gallery label:hover{
   background-color: #49654c;
+  color:#ebebe9;
+  border-color: black;
+  box-shadow: 10px 5px 5px black;
 }
 .grid-row {
   display: block;
