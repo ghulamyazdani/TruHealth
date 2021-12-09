@@ -10,9 +10,10 @@
   background-position: top right;
   background-size: cover;
 }
-body {font-family: 'Poppins', sans-serif;
+body {
   background: url(../Images/Background2.png) no-repeat;
   background-size: cover;
+  font-family: 'Poppins', sans-serif;
 }
 /* prelaoder */
 #loader {
