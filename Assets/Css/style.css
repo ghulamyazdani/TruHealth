@@ -282,10 +282,10 @@ iframe {
 }
 .align-gallery {
   margin-top: -2rem;
-  width: 80%;
+
   margin-left: 2rem;
   padding-bottom: 2rem;
-  margin-left: 10rem;
+
 }
 
 html {
@@ -341,9 +341,11 @@ html {
   font-weight: 400;
   grid-column-start: 2;
   margin: 0 !important;
-  padding: 1rem 0 1rem 3rem;
+  padding: 1em 0 1em 3em;
   position: relative;
   border-bottom: 1px solid #cccccc;
+  transition: linear 0.3s;
+  cursor: pointer;
 }
 .video-gallery label:last-of-type {
   border: 0 none;
@@ -366,9 +368,8 @@ html {
 }
 .grid-row {
   display: block;
-  height: 56vw;
-  max-height: 19.5em;
   position: relative;
+  padding: 10px;
 }
 .grid-row label {
   left: calc(50% + 16px);
