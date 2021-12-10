@@ -1,5 +1,4 @@
 * {
-  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@
 body {
   background: url(../Images/Background2.png) no-repeat;
   background-size: cover;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /* prelaoder */
 #loader {
@@ -358,9 +357,9 @@ html {
   position: absolute;
 }
 
-.video-gallery label:hover{
+.video-gallery label:hover {
   background-color: #49654c;
-  color:#ebebe9;
+  color: #ebebe9;
   border-color: black;
   box-shadow: 10px 5px 5px black;
 }
@@ -802,4 +801,9 @@ html {
 iframe {
   border-radius: 12px;
   margin-top: 1rem;
+}
+
+.selected {
+  background: #93a681;
+  color: #ebebe9;
 }
