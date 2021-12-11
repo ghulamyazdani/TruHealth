@@ -800,7 +800,13 @@ html {
 
 /* End of Get help Headings */
 
-.btn {
+
+iframe {
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.newbtn {
   display: flex;
   
   background: var(--primary);
@@ -815,22 +821,22 @@ html {
   background-color: #49654c;
   color: white;
 }
-.btn-color:hover{
+.newbtn-color:hover{
 background: transparent;
 color: var(--primary);
 color:black;
 }
 .top a{text-decoration: none;
+  text-decoration: none;
+  text-decoration-color: none;
+  color: inherit;
   
 }
-.btn:hover {
+.newbtn:hover {
   background: transparent;
   border-color: var(--primary);
+  color:rgb(15, 15, 15);
 }
 
-iframe {
-  border-radius: 12px;
-  margin-top: 1rem;
-}
 
 
