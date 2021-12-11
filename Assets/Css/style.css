@@ -796,9 +796,41 @@ html {
 .get-help a:hover {
   color: white;
 }
+
+
 /* End of Get help Headings */
+
+.btn {
+  display: flex;
+  
+  background: var(--primary);
+  color: var(--pure);
+  outline: none;
+  padding: 8px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: 1px solid transparent;
+  transition: all .5s ease-in-out;
+  background-color: #49654c;
+  color: white;
+}
+.btn-color:hover{
+background: transparent;
+color: var(--primary);
+color:black;
+}
+.top a{text-decoration: none;
+  
+}
+.btn:hover {
+  background: transparent;
+  border-color: var(--primary);
+}
 
 iframe {
   border-radius: 12px;
   margin-top: 1rem;
 }
+
+
