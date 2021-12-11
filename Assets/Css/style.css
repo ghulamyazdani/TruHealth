@@ -118,6 +118,7 @@ center h1 {
   font-family: Roboto;
   color: #253628;
   font-style: italic;
+  font-weight: bold;
 }
 
 center h3 {
@@ -805,4 +806,9 @@ html {
 iframe {
   border-radius: 12px;
   margin-top: 1rem;
+}
+
+.selected {
+  background: #93a681;
+  color: #ebebe9;
 }
