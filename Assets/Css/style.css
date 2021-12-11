@@ -14,6 +14,10 @@ body {
   background-size: cover;
   font-family: "Poppins", sans-serif;
 }
+h1 {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 500;
+}
 /* prelaoder */
 #loader {
   position: fixed;
@@ -114,6 +118,7 @@ center h1 {
   font-family: Roboto;
   color: #253628;
   font-style: italic;
+  font-weight: bold;
 }
 
 center h3 {
