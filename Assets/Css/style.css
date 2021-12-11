@@ -803,9 +803,12 @@ html {
 }
 /* End of Get help Headings */
 
-iframe {
-  border-radius: 12px;
-  margin-top: 1rem;
+.footer{
+  background-color: #ccdbcf;
+  height: 5rem;
+  margin-top: 7rem;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .selected {
