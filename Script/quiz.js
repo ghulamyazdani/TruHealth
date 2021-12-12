@@ -21,107 +21,148 @@ var choice11 = $('#btn11');
 var choice12 = $('#btn12');
 var choice13 = $('#btn13');
 
+var choice_checker = 0;
+
 function filler1() {
-  questionSet1.css('visibility', 'visible');
-  choice11.css('background', '#93A681');
-  choice11.css('color', '#EBEBE9');
+
+  if (choice_checker == 0) {
+    questionSet1.css('visibility', 'visible');
+    choice11.addClass('selected');
+    choice_checker = 1;
+  }
+
 }
 function filler2() {
-  questionSet1.css('visibility', 'visible');
-  choice12.css('background', '#93A681');
-  choice12.css('color', '#EBEBE9');
+  if (choice_checker == 0) {
+
+    questionSet1.css('visibility', 'visible');
+    choice12.addClass('selected');
+    choice_checker = 1;
+  }
 }
 function filler3() {
-  questionSet1.css('visibility', 'visible');
-  choice13.css('background', '#93A681');
-  choice13.css('color', '#EBEBE9');
+  if (choice_checker == 0) {
+
+    questionSet1.css('visibility', 'visible');
+    choice13.addClass('selected');
+    choice_checker = 1;
+  }
 }
 
 function happy() {
-  score = 1
 
-  choice1.css('background', '#93A681');
-  choice1.css('color', '#EBEBE9');
-  questionSet2.css('visibility', 'visible');
+  if (choice_checker == 1) {
+    score = 1
 
+    choice1.addClass('selected');
+    questionSet2.css('visibility', 'visible');
+    choice_checker = 2;
 
+  }
 }
 
 function sad() {
-  score = 2
+  if (choice_checker == 1) {
+    score = 2
 
-  choice2.css('background', '#93A681');
-  choice2.css('color', '#EBEBE9');
-  questionSet2.css('visibility', 'visible');
-
+    choice2.addClass('selected');
+    questionSet2.css('visibility', 'visible');
+    choice_checker = 2;
+  }
 }
 
 function angry() {
-  score = 3
 
-  choice3.css('background', '#93A681');
-  choice3.css('color', '#EBEBE9');
-  questionSet2.css('visibility', 'visible');
+  if (choice_checker == 1) {
+    score = 3
+    choice3.addClass('selected');
+    questionSet2.css('visibility', 'visible');
+    choice_checker = 2;
+  }
 
 }
 
 function nervous() {
-  score = 4
 
-  choice4.css('background', '#93A681');
-  choice4.css('color', '#EBEBE9');
-  questionSet2.css('visibility', 'visible');
+  if (choice_checker == 1) {
+    score = 4
+    choice4.addClass('selected');
+    questionSet2.css('visibility', 'visible');
+    choice_checker = 2;
+  }
 
 }
 
 function sleepy() {
-  score = 5
 
-  choice5.css('background', '#93A681');
-  choice5.css('color', '#EBEBE9');
-  questionSet2.css('visibility', 'visible');
+  if (choice_checker == 1) {
+
+    score = 5
+    choice5.addClass('selected');
+    questionSet2.css('visibility', 'visible');
+    choice_checker = 2;
+
+  }
 
 }
 
 function rock() {
-  score = score * 7;
 
-  choice6.css('background', '#93A681');
-  choice6.css('color', '#EBEBE9');
-  resultsBtn.css('visibility', 'visible');
+  if (choice_checker == 2) {
 
+    score = score * 7;
+    choice6.addClass('selected');
+    resultsBtn.css('visibility', 'visible');
+    choice_checker = 3;
+
+  }
 
 }
 function rap() {
-  score = score * 11;
 
-  choice7.css('background', '#93A681');
-  choice7.css('color', '#EBEBE9');
-  resultsBtn.css('visibility', 'visible');
+  if (choice_checker == 2) {
+
+    score = score * 11;
+    choice7.addClass('selected');
+    resultsBtn.css('visibility', 'visible');
+    choice_checker = 3;
+
+  }
 
 }
 function pop() {
-  score = score * 13;
+  if (choice_checker == 2) {
 
-  choice8.css('background', '#93A681');
-  choice8.css('color', '#EBEBE9');
-  resultsBtn.css('visibility', 'visible');
+    score = score * 13;
+    choice8.addClass('selected');
+    resultsBtn.css('visibility', 'visible');
+    choice_checker = 3;
+
+  }
 
 }
 function alt() {
-  score = score * 17;
 
-  choice9.css('background', '#93A681');
-  choice9.css('color', '#EBEBE9');
-  resultsBtn.css('visibility', 'visible');
+  if (choice_checker == 2) {
+
+    score = score * 17;
+    choice9.addClass('selected');
+    resultsBtn.css('visibility', 'visible');
+    choice_checker = 3;
+
+  }
 
 }
 function country() {
-  score = score * 19;
 
-  choice10.css('background', '#93A681');
-  choice10.css('color', '#EBEBE9');
-  resultsBtn.css('visibility', 'visible');
+  if (choice_checker == 2) {
+
+    score = score * 19;
+    choice10.addClass('selected');
+    resultsBtn.css('visibility', 'visible');
+    choice_checker = 3;
+
+  }
 
 }
 
