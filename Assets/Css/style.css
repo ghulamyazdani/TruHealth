@@ -789,8 +789,19 @@ iframe{
   text-decoration:none;
   color: #49654C;
 }
+/* <<<<<<< #19_added_audio_visualiser */
 .get-help a:hover{
   color:white;
+/* ======= */
+/* End of Get help Headings */
+
+.footer{
+  background-color: #ccdbcf;
+  height: 5rem;
+  margin-top: 7rem;
+  text-align: center;
+  padding-top: 2rem;
+/* >>>>>>> master */
 }
 .hh{
   position: absolute;
