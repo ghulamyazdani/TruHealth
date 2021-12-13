@@ -801,8 +801,15 @@ html {
 .get-help a:hover {
   color: white;
 }
+
+
 /* End of Get help Headings */
 
+
+
+iframe {
+  border-radius: 12px;
+  margin-top: 1rem;
 .footer{
   background-color: #ccdbcf;
   height: 5rem;
@@ -814,4 +821,40 @@ html {
 .selected {
   background: #93a681;
   color: #ebebe9;
+
 }
+
+.newbtn {
+  display: flex;
+  
+  background: var(--primary);
+  color: var(--pure);
+  outline: none;
+  padding: 8px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: 1px solid transparent;
+  transition: all .5s ease-in-out;
+  background-color: #49654c;
+  color: white;
+}
+.newbtn-color:hover{
+background: transparent;
+color: var(--primary);
+color:black;
+}
+.top a{text-decoration: none;
+  text-decoration: none;
+  text-decoration-color: none;
+  color: inherit;
+  
+}
+.newbtn:hover {
+  background: transparent;
+  border-color: var(--primary);
+  color:rgb(15, 15, 15);
+}
+
+
+
