@@ -803,7 +803,7 @@ html {
 }
 /* End of Get help Headings */
 
-.footer{
+.footer {
   background-color: #ccdbcf;
   height: 5rem;
   margin-top: 7rem;
@@ -814,4 +814,50 @@ html {
 .selected {
   background: #93a681;
   color: #ebebe9;
+}
+.gamess {
+  width: 40vw;
+}
+.game-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.game-list--heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #49654c;
+  margin-bottom: 1rem;
+}
+
+.list-card {
+  width: 20rem;
+  height: 32rem;
+  background-color: aquamarine;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.527);
+}
+.list-card--image img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.list-card--content {
+  padding: 0.5rem 1rem;
+}
+
+.list-card--text {
+  padding-bottom: 0.8rem;
+}
+
+.list-card--content a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ffd400;
+  padding: 0.5rem 2rem;
+  border-radius: 40px;
 }
