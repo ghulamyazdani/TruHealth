@@ -1,31 +1,30 @@
-* {
-  font-family: "Roboto", sans-serif;
+*{
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
   background: url(../Images/Background.png) no-repeat;
-  background-size: 100%;
+  background-size:100% ;
 }
-header {
+header{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 header img {
   margin-top: 1.5rem;
   margin-left: 2rem;
-}
-header a,
-.btn a {
-  text-decoration: none;
-  text-decoration-color: none;
-  color: inherit;
-}
-header li {
-  display: inline-block;
-  padding: 0em 0.5em;
-}
+  } 
+header a , .btn a {
+    text-decoration:none;
+    text-decoration-color: none;
+    color: inherit;
+  }
+header li {    
+    display: inline-block;
+    padding: 0em 0.5em;
+  }
 
 ul {
   list-style: none;
@@ -33,88 +32,94 @@ ul {
   flex-direction: row;
   flex-flow: unset;
   /* margin-right: 2rem; */
-}
+  }
 
-.navbar {
-  background: #49654c;
-  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 23px;
-  height: fit-content;
-  width: fit-content;
-  padding: 0.6rem 1rem;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  color: #ebebe9;
-  margin-top: 1.5rem;
-  margin-right: 4rem;
-  justify-content: space-around;
+.navbar{
+  background: #49654C;
+box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.25);
+border-radius: 23px;
+height:fit-content;
+width: fit-content;
+padding: 0.6rem 1rem;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+color: #EBEBE9;
+margin-top:1.5rem;
+margin-right: 4rem;
+justify-content: space-around;
 }
 .alt {
-  background: #ebebe9;
+  background: #EBEBE9;
   color: #253628;
   border-radius: 47px;
 }
-.items {
+.items{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   display: inline-block;
   padding: 0px 20px;
+  
 }
-header li:hover {
+ header li:hover {
   transition: background-color 0.5s ease;
-  background-color: #ebebe9;
+  background-color: #EBEBE9;
   color: #253628;
   border-radius: 47px;
-}
+  
+} 
 
 .container {
-  width: 40%;
-  text-align: center;
-  margin-left: 29%;
-  font-size: 1.1rem;
-  background: rgba(192, 206, 178, 0.76);
-  border-radius: 61px;
-  margin-top: 3%;
+  width:40%;
+text-align: center;
+margin-left: 29%;
+font-size: 1.1rem;
+background: rgba(192, 206, 178, 0.76);
+border-radius: 61px;
+margin-top: 3%;
 }
 
 div h1 {
   padding: 2rem;
   font-weight: bold;
-  font-size: 2.5rem;
+font-size: 2.5rem;
 }
 
 /*button hover effect*/
 .btn {
-  background: #49654c;
+  background: #49654C;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
   border-radius: 53px;
-  padding: 0.5rem 0.5rem;
+padding: 0.5rem  0.5rem  ;
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
-  margin: 2.7rem;
-  color: #ebebe9;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+margin: 2.7rem;
+color: #EBEBE9;
+
 }
 
-.btn .btn-primary {
+.btn .btn-primary{
   transition: all 0.5s;
   cursor: pointer;
   display: inline-block;
   position: relative;
+  
+ 
 }
 .btn.btn-primary span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  
 }
 .btn.btn-primary span:after {
-  content: "\00bb";
+  content: '\00bb';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -131,14 +136,18 @@ div h1 {
   right: 0;
 }
 
+
 /* media queries */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 550px) {
-  .navbar {
-    font-size: 0.8rem;
-    width: 40%;
+  .navbar{
+      font-size: 0.8rem;
+      width: 40%;
   }
+ 
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 850px) {
+  
+
 }

@@ -1,0 +1,26 @@
+#thefile {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+  }
+  
+  #canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./Assets/Images/Background.png);
+   
+    background-position:center;
+  }
+  
+  audio {
+    position: fixed;
+    left: 0px;
+    bottom: 548px;
+    width: calc(102% - 20px);
+    background-image: linear-gradient(#49654C,#49654C);
+    
+  }
