@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-32x32.png" />
+    <link rel="manifest" href="./Assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>TruHealth-info</title>
+    <!-- css -->
+    <link href="./Assets/Css/style.css" rel="stylesheet" type="text/css" />
+    <script src="./Script/jquery.min.js"></script>
+   <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Patrick+Hand&family=Poppins:wght@200;300&family=Raleway:wght@300&family=Ubuntu:wght@300&family=Zen+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <style>
+      h3
+      {
+        text-align: center;
+        font-family: 'Lobster', cursive;
+      }
+      #joke_btn
+      {
+        margin: 20px 20px ;
+        text-align: center;
+        margin: 4px solid green;
+        font-family: 'Lobster', cursive;
+        font-size: 20px;
+        padding : 10px 10px;
+        border-radius: 8px;
+        margin: 10px  10px;
+
+      }
+      #joke h2
+      {
+        text-align:center;
+        font-size: 20px;;
+      }
+      hr
+      {
+        text-align:center;
+        background-color: black;
+        
+      }
+      #quote_btn
+      {
+        margin: 20px 20px ;
+        text-align: center;
+        margin: 4px solid green;
+        font-family: 'Lobster', cursive;
+        font-size: 20px;
+        padding : 10px 10px;
+        border-radius: 8px;
+        margin: 10px  10px;
+      }
+        
+    </style>
+  </head>
+
+  <body onload="loaded()">
+    <div id="loader"></div>
+    <header>
+      <a href="./index.html"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
+      <nav class="navbar">
+        <div class="content">
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li class="items"><a href="./index.html">Home</a></li>
+            <li class="items"><a href="./info.html">Info</a></li>
+            <li class="items"><a href="./quiz.html">Quiz</a></li>
+            <li class="items"><a href="./gethelp.html">GetHelp</a></li>
+            <li class="items alt"><a href="./fun.html">Fun</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="wid-info container">
+        <div class="align-cont">
+
+          <h1>Not so serious here...</h1>
+        <p class="desc">Having a good sense of humor has numerous long term and short term mental health benefits.<br>Term mental health benefits of humor-<br>Laughing automatically triggers positive physical and mental health changes that helps to relax your mind. <br> The <b>Short term </b>benefits of laughter include:</p>
+        <div class="para">
+  
+        <ul>
+          <li><b>Organ stimulation</b></li>
+          <li><b>Stress Relief</b></li>
+          <li><b>Relief from tension</b></li>
+        </ul>
+       </div>
+   
+      <h3><b>The best way of joking is to tell the truth. <br>That is the funniest joke in the world.</b></h3>
+      <button id="joke_btn">Have a laugh</button>
+      <div id="joke"></div>
+      <hr size ="10" >
+      <h1><button id="quote_btn">Tap for a lovely quote</button></h1>
+      <div id="quote"></div>
+       
+      
+      </div>
+      </div>
+      
+      </div>
+      </div>
+    </section>
+    <footer class="footer"><p>Made with <i class="fa fa-heart pulse"></i> by Team TruHealth </p></footer>
+    <script src="./Script/script.js"></script>
+    <script src="./Script/joke.js"></script>
+  </body>
+</html>
