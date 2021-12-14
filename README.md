@@ -7,7 +7,6 @@
 <a href="https://github.com/ghulamyazdani/TruHealth"><img src="https://img.shields.io/badge/maintenance-yes-brightgreen"></a>
 </p>
 
-     
 <p align="center">
 <a href="https://github.com/ghulamyazdani/TruHealth/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ghulamyazdani/TruHealth?color=brightgreen"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth/stargazers"><img src="https://img.shields.io/github/stars/ghulamyazdani/TruHealth?color=0059b3"></a>
@@ -17,25 +16,26 @@
 <a href="https://github.com/ghulamyazdani/TruHealth/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/ghulamyazdani/TruHealth?color=yellow"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth/pulls"><img src="https://img.shields.io/github/issues-pr/ghulamyazdani/TruHealth?color=brightgreen"></a>
 <a href="https://github.com/ghulamyazdani/TruHealth/issues?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/ghulamyazdani/TruHealth?color=0059b3"></a>
-</p>    
-
+</p>
 
 Everyone who is feeling their mental health is not going in the right direction or they are having depression!
 
 ## 🌟 About
+
 An app for all those who care about their health.
--  how to deal with depression
--  how to keep good mental health.
--  Project will also have music features
--  Some motivational thoughts and quizzes section 
 
-## Tech Used
+- how to deal with depression
+- how to keep good mental health.
+- Project will also have music features
+- Some motivational thoughts and quizzes section
+
+## ⚙ Tech Used
+
 | Frontend | HTML CSS JAVASCRIPT |
-|:-:|:-:|
-| Backend | bakend-api & jQuery |
+| :------: | :-----------------: |
+| Backend  | bakend-api & jQuery |
 
-
-## Project Structure
+## 🏗 Project Structure
 
 ```
 ├───assets
@@ -43,23 +43,18 @@ An app for all those who care about their health.
 │   └───images
 |   └───favicon
 ├───script
-│   ├───jquery.min.js              
-│   └─── quiz.js                
+│   ├───jquery.min.js
+│   └─── quiz.js
 |   └─── script.js
 
 ```
-
-  
 
 <!--
 ##  ▶️ How to Run the Project
 **1.** Navigate to the project directory.
 -->
 
-
-
-<h1 align=center> Project Admin </h1>
-
+<h1 align=center> 👨‍💻 Project Admin </h1>
 
   <div align="center">
 <table>
@@ -67,8 +62,15 @@ An app for all those who care about their health.
 
 <td align="center"><a href="https://github.com/ghulamyazdani"><img src="https://avatars.githubusercontent.com/u/55938346?v=4" width=150px height=150px /></a></br> <h4 style="color:white;">Ghulamyazdani</h4>
 
-     
 </tr>
 </table>
 <br>
 
+<br>
+
+<h1 align=center> 🙌 Contributors</h1>
+<br>
+<a href="https://github.com/ghulamyazdani/TruHealth/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ghulamyazdani/TruHealth" />
+</a>
+<br>
