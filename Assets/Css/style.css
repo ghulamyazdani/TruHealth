@@ -10,8 +10,9 @@
   background-size: cover;
 }
 body {
-  background: url(../Images/Background2.png) no-repeat;
+  background: url(../Images/Backgroundmerged.png) no-repeat;
   background-size: cover;
+  
   font-family: "Poppins", sans-serif;
 }
 h1 {
