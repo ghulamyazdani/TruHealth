@@ -1,0 +1,52 @@
+.content{
+  display:flex;
+  flex-direction: column-reverse;
+}
+#thefile {
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+  }
+  #thefile {
+    order:2;
+    width: 100%;
+    border: none;
+    background-color: #49654C;
+    color: white;
+    margin: -10px -11px;;
+    padding: 2px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: right;
+  }
+  
+   #thefile:hover {
+    background-color: #ddd;
+    color: black;
+  } 
+  
+  #canvas {
+    
+    position: flex;
+    flex-wrap: wrap;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Images/true_health_new_poster.png);
+    background-position:center;
+    background-size: 100%;
+    background: image width 100px;
+    background-repeat: no-repeat;
+  }
+  
+  audio {
+    margin:0px 0px;
+    left: 0px;
+    bottom: 548px;
+    width: calc(105% - 20px);
+    align-self:center;
+    background-image: linear-gradient(#49654C,#49654C);
+    background-repeat: no-repeat;
+    
+  }
