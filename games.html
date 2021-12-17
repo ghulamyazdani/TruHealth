@@ -11,7 +11,7 @@
     <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <title>TruHealth-Quiz</title>
+    <title>TruHealth-Games</title>
     <!-- css -->
     <link href="./Assets/Css/style.css" rel="stylesheet" type="text/css" />
     <script src="./Script/jquery.min.js"></script>
@@ -39,10 +39,9 @@
             </div>
             <li class="items"><a href="./index.html">Home</a></li>
             <li class="items"><a href="./info.html">Info</a></li>
-            <li class="items alt"><a href="./quiz.html">Quiz</a></li>
-            <li class="items"><a href="./games.html">Games</a></li>
+            <li class="items"><a href="./quiz.html">Quiz</a></li>
+            <li class="items alt"><a href="./games.html">Games</a></li>
             <li class="items"><a href="./gethelp.html">GetHelp</a></li>
-            <li class="items"><a href="./fun.html">Fun</a></li>
           </ul>
           <div class="icon menu-btn">
             <i class="fas fa-bars"></i>
@@ -51,37 +50,39 @@
       </nav>
     </header>
     <center>
-      <h1>The Quiz!</h1>
-      <section class="fillerQuestion">
-        <h3>How was your day today?</h3>
-        <button id="btn11" type="button" onclick="filler1()">Good!</button>
-        <button id="btn12" type="button" onclick="filler2()">In the middle</button>
-        <button id="btn13" type="button" onclick="filler3()">Not good...</button>
-      </section>
-
-      <section class="firstQuestion">
-        <h3>How are you feeling right now?</h3>
-
-        <button id="btn1" type="button" onclick="happy()">Happy/Content</button>
-        <button id="btn2" type="button" onclick="sad()">Sad/Discontent</button>
-        <button id="btn3" type="button" onclick="angry()">Angry/Irritated</button>
-        <button id="btn4" type="button" onclick="nervous()">Nervous/Tense</button>
-        <button id="btn5" type="button" onclick="sleepy()">Sleepy/Tired</button>
-        <div id="results"></div>
-      </section>
-
-      <section class="secondQuestion">
-        <h3>What genres do you typically like?</h3>
-        <button id="btn6" type="button" onclick="rock()">Rock</button>
-        <button id="btn7" type="button" onclick="rap()">Hip-hop/Rap</button>
-        <button id="btn8" type="button" onclick="pop()">Pop</button>
-        <button id="btn9" type="button" onclick="alt()">Alternative</button>
-        <button id="btn10" type="button" onclick="country()">Country</button>
-      </section>
-      <section class="Results-show"></section>
-      <section class="Results">
-        <button id="btn11" type="button" onclick="checkResults()">Get my results!</button>
-      </section>
+      <h1 class="game-list--heading">Games</h1>
+      <div class="gamess">
+        <div class="game-list">
+          <div class="list-card">
+            <div class="list-card--image">
+              <img src="./Assets/Images/sudoku.jpg" alt="sudoku" />
+            </div>
+            <div class="list-card--content">
+              <h2 class="list-card--heading">Sudoku</h2>
+              <p class="list-card--text">
+                Sudoku is a logic-based, combinatorial number-placement puzzle. In classic sudoku, the objective is to
+                fill a 9 × 9 grid with digits so that each column, each row, and each of the nine 3 × 3 subgrids that
+                compose the grid contain all of the digits from 1 to 9.
+              </p>
+              <a href="./sudoku.html" class="list-card--btn">Play</a>
+            </div>
+          </div>
+          <div class="list-card">
+            <div class="list-card--image">
+              <img src="./Assets/Images/memorygame.jpg" alt="memorygame" />
+            </div>
+            <div class="list-card--content">
+              <h2 class="list-card--heading">Memory Game</h2>
+              <p class="list-card--text">
+                Test your memory with this memory game. The higher the number, the more cards are in the memo game. On
+                the game board, there are always two identical images. Start the game by flipping a card. Then try to
+                find another card that has the same image as the first.
+              </p>
+              <a href="./memory-game.html" class="list-card--btn">Play</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </center>
 
     <footer class="footer">

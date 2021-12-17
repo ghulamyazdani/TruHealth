@@ -10,8 +10,9 @@
   background-size: cover;
 }
 body {
-  background: url(../Images/Background2.png) no-repeat;
+  background: url(../Images/Backgroundmerged.png) no-repeat;
   background-size: cover;
+  
   font-family: "Poppins", sans-serif;
 }
 h1 {
@@ -286,10 +287,10 @@ iframe {
 }
 .align-gallery {
   margin-top: -2rem;
-  width: 80%;
+
   margin-left: 2rem;
   padding-bottom: 2rem;
-  margin-left: 10rem;
+
 }
 
 html {
@@ -345,9 +346,11 @@ html {
   font-weight: 400;
   grid-column-start: 2;
   margin: 0 !important;
-  padding: 1rem 0 1rem 3rem;
+  padding: 1em 0 1em 3em;
   position: relative;
   border-bottom: 1px solid #cccccc;
+  transition: linear 0.3s;
+  cursor: pointer;
 }
 .video-gallery label:last-of-type {
   border: 0 none;
@@ -370,9 +373,8 @@ html {
 }
 .grid-row {
   display: block;
-  height: 56vw;
-  max-height: 19.5em;
   position: relative;
+  padding: 10px;
 }
 .grid-row label {
   left: calc(50% + 16px);
@@ -537,7 +539,6 @@ html {
   .video-gallery .video {
     order: 1;
     padding-top: 4.1%;
-    padding-bottom: 51.95%;
     position: relative;
     top: auto;
     width: 100%;
@@ -803,12 +804,61 @@ html {
 }
 /* End of Get help Headings */
 
-iframe {
-  border-radius: 12px;
-  margin-top: 1rem;
+.footer {
+  background-color: #ccdbcf;
+  height: 5rem;
+  margin-top: 7rem;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .selected {
   background: #93a681;
   color: #ebebe9;
+}
+.gamess {
+  width: 40vw;
+}
+.game-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.game-list--heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #49654c;
+  margin-bottom: 1rem;
+}
+
+.list-card {
+  width: 20rem;
+  height: 32rem;
+  background-color: aquamarine;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.527);
+}
+.list-card--image img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.list-card--content {
+  padding: 0.5rem 1rem;
+}
+
+.list-card--text {
+  padding-bottom: 0.8rem;
+}
+
+.list-card--content a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ffd400;
+  padding: 0.5rem 2rem;
+  border-radius: 40px;
 }
