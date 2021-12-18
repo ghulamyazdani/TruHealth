@@ -1,81 +1,48 @@
+const btn = document.getElementById('joke_btn')
+const btn2 = document.getElementById('quote_btn')
+const joke = document.getElementById('joke');
+const quote = document.getElementById('quote');
+const jokeText = document.querySelector('.joke-text');
+const quoteText = document.querySelector('.quote-text');
+const quoteTextAuthor = document.querySelector('.quote-text--author');
+const btnJokeCopy = document.getElementById('joke_btn_copy');
+const btnQuoteCopt = document.getElementById('quote_btn_copy');
 
-//import axios from 'axios';
+jokeText.textContent = 'Click to get a joke. Share it with your friends!';
+quoteText.textContent = 'Click to get a quote. Share it with your friends!';
 
-const btn= document.getElementById('joke_btn')
-const btn2= document.getElementById('quote_btn')
-const joke= document.getElementById('joke');
-const quote= document.getElementById('quote');
+btn.addEventListener('click', getJoke, true)
 
-console.log(joke.innerHTML);
-//console.log(btn)
-
-btn.addEventListener('click',getJoke,true)
-
-//getJoke();
-
-async function getJoke()
-{
-    // axios.get('https://v2.jokeapi.dev/joke/Any')
-    // .then(res=>{
-    //   console.log(res);
-
-    // }).catch(err=>{
-      
-    //     console.log(err);
-    // })
-
-    const response =  await fetch('https://v2.jokeapi.dev/joke/Any');
-
-    console.log(response);
+async function getJoke() {
+    btn.classList.add('clicked');
+    const response = await fetch('https://v2.jokeapi.dev/joke/Any?type=single');
     const json = await response.json();
-
-    const jokediv= document.createElement('div');
-    jokediv.classList.add('jokediv');
-
-    console.log(json);
-
-    console.log(json.setup);
-    console.log(json.delivery);
-
-    const jokedivhtml=`<h2>${json.setup}</h2><br><h3>${json.delivery}</h3>`;
-  
-
-    joke.innerHTML=jokedivhtml;
+    jokeText.textContent = json.joke;
 }
 
 
+btn2.addEventListener('click', getQuote, true)
 
-btn2.addEventListener('click',getQuote,true)
-
-//getQuote();
-
-async function getQuote()
-{
-    // axios.get('https://v2.jokeapi.dev/joke/Any')
-    // .then(res=>{
-    //   console.log(res);
-
-    // }).catch(err=>{
-      
-    //     console.log(err);
-    // })
-
-    const response =  await fetch('https://type.fit/api/quotes');
-
+async function getQuote() {
+    let random = Math.floor((Math.random() * 100) + 1)
+    const response = await fetch('https://type.fit/api/quotes');
     console.log(response);
     const json = await response.json();
+    quoteText.textContent = `${json[random].text}`;
+    if (json[random].author === null) {
+        quoteTextAuthor.textContent = 'Unknown';
+    } else {
+        quoteTextAuthor.textContent = `By-${json[random].author}`;
+    }
+}
 
-    const quotediv= document.createElement('div');
-    quotediv.classList.add('quotediv');
 
-    console.log(json);
+btnJokeCopy.onclick = function () {
+    let input = joke.textContent.trim();
+    navigator.clipboard.writeText(input);
+}
 
-    
-    console.log(json[Math.floor((Math.random() * 100) + 1)].text);
-    console.log(json[Math.floor((Math.random() * 100) + 1)].author);
-
-    const quotedivhtml=`<h2>${json[Math.floor((Math.random() * 100) + 1)].text}</h2><br><h3>by-${json[Math.floor((Math.random() * 100) + 1)].author}</h3>`;
-  
-
-    quote.innerHTML=quotedivhtml;
+btnQuoteCopt.onclick = function () {
+    let input = quote.textContent.trim();
+    navigator.clipboard.writeText(input);
 }

@@ -12,7 +12,7 @@
 body {
   background: url(../Images/Backgroundmerged.png) no-repeat;
   background-size: cover;
-  
+
   font-family: "Poppins", sans-serif;
 }
 h1 {
@@ -221,6 +221,7 @@ center img {
   border-radius: 16px;
   width: 90%;
   margin: 0 auto;
+  padding: 0.6rem;
 }
 .wid-main {
   width: 70%;
@@ -290,7 +291,6 @@ iframe {
 
   margin-left: 2rem;
   padding-bottom: 2rem;
-
 }
 
 html {
@@ -726,6 +726,10 @@ html {
   .main {
     background-size: 100% 100%;
   }
+  #joke,
+  #quote {
+    max-width: 100%;
+  }
 }
 
 /* media queries */
@@ -790,9 +794,21 @@ html {
   .wid-info {
     margin-top: 2rem;
   }
+
+  #joke,
+  #quote {
+    max-width: 100%;
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 850px) {
+}
+
+@media only screen and (max-width: 600px) {
+  #joke,
+  #quote {
+    max-width: 100%;
+  }
 }
 /* Get help Headings */
 .get-help h3 a {
@@ -861,4 +877,70 @@ html {
   background-color: #ffd400;
   padding: 0.5rem 2rem;
   border-radius: 40px;
+}
+
+h3 {
+  text-align: center;
+}
+
+#joke,
+#quote {
+  width: 39rem;
+  margin: 0 auto;
+  min-height: 9rem;
+  background: #c0ceb2;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.36), inset -5px -5px 10px #ddeccd;
+  border-radius: 21px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.joke-text,
+.quote-text {
+  font-size: 1.125rem;
+  padding: 1rem;
+  color: #0b1600;
+  font-family: "Shalimar", cursive;
+  line-height: 1.2;
+}
+
+#joke_btn,
+#quote_btn {
+  cursor: pointer;
+  display: block;
+  border: none;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px 10px;
+  background: #a9b69c;
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.36), inset 5px 5px 10px #ddeccd;
+  border-radius: 21px;
+}
+
+.joke-heading {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+.quote-text--author {
+  font-family: "Shalimar", cursive;
+}
+#joke_btn_copy,
+#quote_btn_copy {
+  color: #395022;
+  border: none;
+  padding: 5px;
+  background: transparent;
+  border-radius: 2px;
+  font-size: 1.1rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
 }
