@@ -26,9 +26,12 @@
 
   <body onload="loaded()">
     <div id="loader"></div>
-    <header>
-      <a href="./index.html"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
-      <nav class="navbar">
+    <div class="game-header">
+      <a href="./index.html">
+        <img src="./Assets/Images/TruHealth-center.png" alt="TruHealth" />
+      </a>
+    </div>
+      <!-- <nav class="navbar">
         <div class="content">
           <ul class="menu-list">
             <div class="icon cancel-btn">
@@ -45,8 +48,7 @@
             <i class="fas fa-bars"></i>
           </div>
         </div>
-      </nav>
-    </header>
+      </nav> -->
     <section>
       <div class="wid-info container">
         <div class="align-cont">
@@ -80,6 +82,8 @@
       
       </div>
       </div>
+      <button class="back-btn"><a href="./games.html">Go Back</a></button>
+      
     </section>
     <footer class="footer"><p>Made with <i class="fa fa-heart pulse"></i> by Team TruHealth </p></footer>
     <script src="./Script/script.js"></script>

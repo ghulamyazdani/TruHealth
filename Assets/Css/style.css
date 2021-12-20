@@ -12,7 +12,6 @@
 body {
   background: url(../Images/Backgroundmerged.png) no-repeat;
   background-size: cover;
-
   font-family: "Poppins", sans-serif;
 }
 h1 {
@@ -113,6 +112,7 @@ header li:hover {
 /* Quiz section */
 center {
   margin-top: 2rem;
+  width: 100vw;
 }
 
 center h1 {
@@ -613,7 +613,9 @@ html {
   margin: 2.7rem;
   color: #ebebe9;
 }
-.responses-btn{cursor: pointer;}
+.responses-btn {
+  cursor: pointer;
+}
 .btn .btn-primary {
   transition: all 0.5s;
   cursor: pointer;
@@ -799,18 +801,11 @@ html {
   #joke,
   #quote {
     max-width: 100%;
+    font-size: 16px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 850px) {
-}
 
-@media only screen and (max-width: 600px) {
-  #joke,
-  #quote {
-    max-width: 100%;
-  }
-}
 /* Get help Headings */
 .get-help h3 a {
   text-decoration: none;
@@ -834,13 +829,17 @@ html {
   color: #ebebe9;
 }
 .gamess {
-  width: 40vw;
+  display: block;
+  margin: 0 auto;
+  /* background-color: #253628; */
+  width: 60vw;
 }
 .game-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  gap: 30px;
 }
 .game-list--heading {
   font-size: 4rem;
@@ -857,6 +856,9 @@ html {
   overflow: hidden;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.527);
 }
+.list-card--image {
+  height: 40%;
+}
 .list-card--image img {
   width: 100%;
   background-size: cover;
@@ -866,10 +868,12 @@ html {
 
 .list-card--content {
   padding: 0.5rem 1rem;
+  height: 62%;
 }
 
 .list-card--text {
   padding-bottom: 0.8rem;
+  height: 70%;
 }
 
 .list-card--content a {
@@ -944,4 +948,63 @@ h3 {
   bottom: 0.5rem;
   right: 0.5rem;
   cursor: pointer;
+}
+
+.game-header {
+  height: 4rem;
+  margin: 1rem 0 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.game-header img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .game-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .game-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .game-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    width: 100vw;
+  }
+}
+@media (max-width: 480px) {
+  .game-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.back-btn {
+  display: block;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  margin: 10px auto;
+  text-decoration: none;
+  font-size: 18px;
+  width: 7rem;
+  background: #c0ceb2;
+  border: none;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+}
+.back-btn a {
+  text-decoration: none;
+  color: #000000;
 }
