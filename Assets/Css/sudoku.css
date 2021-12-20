@@ -64,13 +64,14 @@ h3 {
   border-radius: 30px;
   border: none;
   background: #c0ceb2;
-  box-shadow: inset 10px 10px 20px -3px rgba(255, 255, 255, 0.54), inset -10px -10px 20px -5px rgba(0, 27, 32, 0.5);
+  background: #a9b69c;
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.36), inset 5px 5px 10px #ddeccd;
   font-size: 1rem;
   transition: all 0.3s;
 }
 
 #start-btn:hover {
-  box-shadow: inset -10px -10px 20px rgba(240, 240, 240, 0.54), inset 10px 10px 20px rgba(0, 27, 32, 0.5);
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.36), inset -5px -5px 10px #ddeccd;
 }
 
 #diff,
@@ -324,14 +325,14 @@ input[type="radio"] {
     text-align: center;
     padding-top: 6px;
   }
-  button {
+  #start-btn {
     padding: 0.6rem 1.2rem;
     border-radius: 30px;
-    box-shadow: inset 6px 6px 12px -3px rgba(255, 255, 255, 0.54), inset -6px -6px 12px -5px rgba(0, 27, 32, 0.5);
+    box-shadow: inset 6px 6px 12px -3px rgba(0, 0, 0, 0.36), inset -6px -6px 12px -5px #ddeccd;
     font-size: 0.8rem;
   }
-  button:hover {
-    box-shadow: inset -6px -6px 12px rgba(240, 240, 240, 0.54), inset 6px 6px 12px rgba(0, 27, 32, 0.5);
+  #start-btn:hover {
+    box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.36), inset 6px 6px 12px #ddeccd;
   }
 
   .wrapper {
