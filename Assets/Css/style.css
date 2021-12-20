@@ -72,7 +72,7 @@ header ul {
 }
 .navbar {
   background: #49654c;
-  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 5px 6px rgba(233, 222, 222, 0.25);
   border-radius: 23px;
   height: fit-content;
   width: fit-content;
@@ -85,6 +85,7 @@ header ul {
   margin-top: 1.5rem;
   margin-right: 1rem;
   justify-content: space-around;
+  
 }
 .alt {
   background: #ebebe9;
@@ -111,7 +112,7 @@ header li:hover {
 
 /* Quiz section */
 center {
-  margin-top: -3rem;
+  margin-top: 2rem;
 }
 
 center h1 {
@@ -239,7 +240,7 @@ center img {
 }
 .wid-info {
   width: 80%;
-  margin-top: -4.5rem;
+  margin-top: 2rem;
   margin-left: 10%;
 }
 .container h3,
