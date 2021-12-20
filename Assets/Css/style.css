@@ -80,10 +80,10 @@ header ul {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   color: #ebebe9;
   margin-top: 1.5rem;
-  margin-right: 4rem;
+  margin-right: 1rem;
   justify-content: space-around;
 }
 .alt {
@@ -97,8 +97,8 @@ header ul {
   margin-left: 1.4rem;
 }
 .items {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
   display: inline-block;
   padding: 0px 20px;
 }
