@@ -11,22 +11,10 @@ body {
   height: 100vh;
   flex-direction: column;
   position: relative;
-  background-color: #ade8f4;
+  background-color: #f7ffef;
   font-family: "Poppins", sans-serif;
 }
 
-.back-btn {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  cursor: pointer;
-  padding: 0.8rem 2rem;
-  border-radius: 40px;
-  border: none;
-  background-color: rgb(0, 89, 255);
-  color: aliceblue;
-  text-decoration: none;
-}
 section {
   display: grid;
   grid-template-rows: repeat(4, 8rem);
@@ -36,6 +24,10 @@ section {
 }
 .game {
   padding-top: 2rem;
+}
+
+h1 {
+  color: #363f2d;
 }
 
 .card {
@@ -63,4 +55,57 @@ section {
 
 .toggleCard {
   transform: rotateY(180deg);
+}
+
+.back-btn {
+  display: block;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  margin: 4rem auto 0 auto;
+  text-decoration: none;
+  font-size: 18px;
+  width: 7rem;
+  background: #363f2d;
+  border: none;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+}
+.back-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.game-header {
+  height: 4rem;
+  margin: 1rem 0 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.game-header img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  section {
+    grid-template-rows: repeat(4, 6rem);
+    grid-template-columns: repeat(4, 6rem);
+    grid-gap: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    grid-template-rows: repeat(4, 4rem);
+    grid-template-columns: repeat(4, 4rem);
+    grid-gap: 1rem;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
 }
