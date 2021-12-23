@@ -32,68 +32,28 @@
   </head>
   <body class="main" onload="loaded()">
     <div id="loader"></div>
-    <div class="game-header">
-      <a href="./index.html">
-        <img src="./Assets/Images/TruHealth-center.png" alt="TruHealth" />
-      </a>
-    </div>
-    <center>
-      <h1>The Quiz!</h1>
-      <section class="fillerQuestion">
-        <h3>How was your day today?</h3>
-        <button id="btn11" type="button" class="responses-btn" onclick="filler1()">Good!</button>
-        <button id="btn12" type="button" class="responses-btn" onclick="filler2()">In the middle</button>
-        <button id="btn13" type="button" class="responses-btn" onclick="filler3()">Not good...</button>
-      </section>
-
-      <section class="firstQuestion">
-        <h3>How are you feeling right now?</h3>
-
-        <button id="btn1" type="button" class="responses-btn" onclick="happy()">Happy/Content</button>
-        <button id="btn2" type="button" class="responses-btn" onclick="sad()">Sad/Discontent</button>
-        <button id="btn3" type="button" class="responses-btn" onclick="angry()">Angry/Irritated</button>
-        <button id="btn4" type="button" class="responses-btn" onclick="nervous()">Nervous/Tense</button>
-        <button id="btn5" type="button" class="responses-btn" onclick="sleepy()">Sleepy/Tired</button>
-        <div id="results"></div>
-      </section>
-
-      <section class="secondQuestion">
-        <h3>What genres do you typically like?</h3>
-        <button id="btn6" type="button" class="responses-btn" onclick="rock()">Rock</button>
-        <button id="btn7" type="button" class="responses-btn" onclick="rap()">Hip-hop/Rap</button>
-        <button id="btn8" type="button" class="responses-btn" onclick="pop()">Pop</button>
-        <button id="btn9" type="button" class="responses-btn" onclick="alt()">Alternative</button>
-        <button id="btn10" type="button" class="responses-btn" onclick="country()">Country</button>
-      </section>
-      <section class="Results-show"></section>
-      <section class="Results">
-        <button id="btn11" type="button" class="responses-btn" onclick="checkResults()">Get my results!</button>
-      </section>
-
-      <button class="back-btn"><a href="./games.html">Go Back</a></button>
-    </center>
-
+    
+    
+      
     <header>
-      <a href="#"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
-      <nav class="navbar">
-        <div class="content">
-          <ul class="menu-list">
-            <div class="icon cancel-btn">
-              <i class="fas fa-times"></i>
+        <a href="./index.html"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
+        <nav class="navbar">
+          <div class="content">
+            <ul class="menu-list">
+              <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+              </div>
+              <li class="items"><a href="./index.html">Home</a></li>
+              <li class="items"><a href="./info.html">Info</a></li>
+              <li class="items"><a href="./games.html">Games</a></li>
+              <li class="items alt"><a href="./gethelp.html">GetHelp</a></li>
+            </ul>
+            <div class="icon menu-btn">
+              <i class="fas fa-bars"></i>
             </div>
-            <a href="./index.html"><li class="items alt">Home</li></a>
-            <a href="./info.html"><li class="items">Info</li></a>
-            <a href="./quiz.html"><li class="items">Quiz</li></a>
-            <a href="./games.html"><li class="items">Games</li></a>
-            <a href="./gethelp.html"><li class="items">Get Help</li></a>
-            <li class="items"><a href="./fun.html">Fun</a></li>
-          </ul>
-          <div class="icon menu-btn">
-            <i class="fas fa-bars"></i>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
     <section>
       <div class="wid-main container">
         <div class="test">
@@ -363,7 +323,7 @@
           <div class="options q23"><h4>Usually</h4></div></div>
         </div>
         <button class="btn btn-primary">
-          <span><a onclick="fetchScore()">Submit</a></span>
+          <span><a onclick="fetchScore()">Check your result</a></span>
         </button>
       </div>
       </div>

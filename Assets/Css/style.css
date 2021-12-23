@@ -30,7 +30,19 @@ body {
   margin-left: 7rem;
   margin-bottom: 2rem;
 }
-
+.anxiety{
+  font-family: "Raleway", sans-serif !important;
+  border-radius: 20rem;
+  font-size: medium;
+  width:15rem;
+  height: 3rem;
+  margin-left: 5rem;
+  margin-top: 30px;
+  color: white;
+  border: none;
+  background-color:#49654C  ;
+  cursor: pointer;
+}
 .option{
   display: flex;
   flex-direction: row;
@@ -859,9 +871,6 @@ html {
   background-color: #ccdbcf;
   height: 5rem;
   margin-top: 7rem;
-  position: relative;
-  bottom:0;
-  width: 100vw;
   text-align: center;
   padding-top: 2rem;
 }
