@@ -15,6 +15,43 @@ body {
   
   font-family: "Poppins", sans-serif;
 }
+.options{
+  width:13rem;
+  background-color: #49654C;
+  border-radius: 4rem;
+  margin: 1rem;
+  cursor: pointer;
+
+
+
+}
+.question{
+  font-size: 23px;
+  text-align: left;
+  margin-left: 7rem;
+  margin-bottom: 2rem;
+}
+
+.option{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center;
+   */
+   margin-left: 5rem;
+   margin-bottom: 2rem;
+}
+.options h4{
+  color: white;
+  background-color: #49654C;
+  width: 13rem;
+
+ 
+}
+.options.active h4{
+  color: black;
+  background-color: white;
+}
 h1 {
   font-family: "Raleway", sans-serif !important;
   font-weight: 500;
@@ -768,7 +805,10 @@ html {
     margin-top: 1rem;
     width: 60%;
   }
+  .wid-main.container.active1{
+    height:500px;
 
+  }
   .wid {
     width: 88%;
     margin-left: 6%;
@@ -808,6 +848,9 @@ html {
   background-color: #ccdbcf;
   height: 5rem;
   margin-top: 7rem;
+  position: relative;
+  bottom:0;
+  width: 100vw;
   text-align: center;
   padding-top: 2rem;
 }
