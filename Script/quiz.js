@@ -28,10 +28,9 @@ var count=1;
 function adder(value){
   value.addEventListener('click',(e)=>{
     var qnum=e.classList;
-    console.log(e.path[1].classList[1]);
+
     var index=e.path[1].classList[1];
     const arr=document.querySelectorAll(`.${index}`);
-    console.log(`.q${count}`);
 
     arr.forEach(deSelectAll);
     function deSelectAll(value1){
