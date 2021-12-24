@@ -8,6 +8,7 @@ body {
 }
 .container {
   display: flex;
+
   width: 70vw;
   margin: 2rem auto;
 }
@@ -108,9 +109,9 @@ canvas {
 
 @media (max-width: 768px) {
   .container {
+    flex-wrap: wrap;
     width: 100vw;
     margin: 1rem auto;
-    flex-direction: column;
   }
   video,
   canvas {
@@ -120,4 +121,16 @@ canvas {
 }
 
 @media (max-width: 480px) {
+  .header {
+    width: 100vw;
+    text-align: center;
+  }
+  .description {
+    width: 100vw;
+  }
+  video,
+  canvas {
+    width: 90vw;
+    height: 260px;
+  }
 }
