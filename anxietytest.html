@@ -26,306 +26,351 @@
     <!-- css -->
     <link rel="stylesheet" href="./Assets/Css/style.css" />
     <script src="./Script/jquery.min.js"></script>
-    
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>TruHealth</title>
   </head>
   <body class="main" onload="loaded()">
     <div id="loader"></div>
-    
-    
-      
+
     <header>
-        <a href="./index.html"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
-        <nav class="navbar">
-          <div class="content">
-            <ul class="menu-list">
-              <div class="icon cancel-btn">
-                <i class="fas fa-times"></i>
-              </div>
-              <li class="items"><a href="./index.html">Home</a></li>
-              <li class="items"><a href="./info.html">Info</a></li>
-              <li class="items"><a href="./games.html">Games</a></li>
-              <li class="items alt"><a href="./gethelp.html">GetHelp</a></li>
-            </ul>
-            <div class="icon menu-btn">
-              <i class="fas fa-bars"></i>
+      <a href="./index.html"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
+      <nav class="navbar">
+        <div class="content">
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
             </div>
+            <li class="items"><a href="./index.html">Home</a></li>
+            <li class="items"><a href="./info.html">Info</a></li>
+            <li class="items"><a href="./games.html">Games</a></li>
+            <li class="items alt"><a href="./gethelp.html">GetHelp</a></li>
+            <li class="items"><a href="./Audio_player.html">Audio player</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
     <section>
       <div class="wid-main container">
         <div class="test">
-        <h1>Anxiety Test</h1>
-        <div class="question">Pounding heart</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q1"><h4>Not at all</h4></div>
-          <div class="options q1"><h4>Just a little</h4></div>
+          <h1>Anxiety Test</h1>
+          <div class="anxietytest-header">
+          <div class="question">Pounding heart</div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+          </div>
         </div>
-        <div class="2ndrow">
-          <div class="options q1"><h4>Sometimes</h4></div>
-          <div class="options q1"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q1"><h4>Usually</h4></div></div>
+          <div class="option">
+              <div class="options">Not at all</div>
+              <div class="options">Just a little</div>
+              <div class="options">Sometimes</div>
+              <div class="options">Often</div>
+              <div class="options">Usually</div>
+            </div>
+          </div>
+          <!-- <div class="question">Sweating</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q2"><h4>Not at all</h4></div>
+              <div class="options q2"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q2"><h4>Sometimes</h4></div>
+              <div class="options q2"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q2"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Trembling or shaking</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q3"><h4>Not at all</h4></div>
+              <div class="options q3"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q3"><h4>Sometimes</h4></div>
+              <div class="options q3"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q3"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Shortness of breath</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q4"><h4>Not at all</h4></div>
+              <div class="options q4"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q4"><h4>Sometimes</h4></div>
+              <div class="options q4"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q4"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Afraid or scared</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q5"><h4>Not at all</h4></div>
+              <div class="options q5"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q5"><h4>Sometimes</h4></div>
+              <div class="options q5"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q5"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Chest pain or discomfort</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q6"><h4>Not at all</h4></div>
+              <div class="options q6"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q6"><h4>Sometimes</h4></div>
+              <div class="options q6"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q6"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Nausea or abdominal distress</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q7"><h4>Not at all</h4></div>
+              <div class="options q7"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q7"><h4>Sometimes</h4></div>
+              <div class="options q7"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q7"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Feeling dizzy or unsteady</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q8"><h4>Not at all</h4></div>
+              <div class="options q8"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q8"><h4>Sometimes</h4></div>
+              <div class="options q8"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q8"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Fear of losing control or going crazy</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q9"><h4>Not at all</h4></div>
+              <div class="options q9"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q9"><h4>Sometimes</h4></div>
+              <div class="options q9"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q9"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Numbness or tingling sensations</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q10"><h4>Not at all</h4></div>
+              <div class="options q10"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q10"><h4>Sometimes</h4></div>
+              <div class="options q10"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q10"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Chills or hot flashes</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q11"><h4>Not at all</h4></div>
+              <div class="options q11"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q11"><h4>Sometimes</h4></div>
+              <div class="options q11"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q11"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Fear of dying</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q12"><h4>Not at all</h4></div>
+              <div class="options q12"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q12"><h4>Sometimes</h4></div>
+              <div class="options q12"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q12"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Constant or persitant worry</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q13"><h4>Not at all</h4></div>
+              <div class="options q13"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q13"><h4>Sometimes</h4></div>
+              <div class="options q13"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q13"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Feeling of choking</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q14"><h4>Not at all</h4></div>
+              <div class="options q14"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q14"><h4>Sometimes</h4></div>
+              <div class="options q14"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q14"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Unable to relax</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q15"><h4>Not at all</h4></div>
+              <div class="options q15"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q15"><h4>Sometimes</h4></div>
+              <div class="options q15"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q15"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Feeling of being unreal</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q16"><h4>Not at all</h4></div>
+              <div class="options q16"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q16"><h4>Sometimes</h4></div>
+              <div class="options q16"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q16"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Nervous</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q17"><h4>Not at all</h4></div>
+              <div class="options q17"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q17"><h4>Sometimes</h4></div>
+              <div class="options q17"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q17"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Feeling shaky or wobbly</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q18"><h4>Not at all</h4></div>
+              <div class="options q18"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q18"><h4>Sometimes</h4></div>
+              <div class="options q18"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q18"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Irritable or difficulty sleeping</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q20"><h4>Not at all</h4></div>
+              <div class="options q20"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q20"><h4>Sometimes</h4></div>
+              <div class="options q20"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q20"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Trembling Hands</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q21"><h4>Not at all</h4></div>
+              <div class="options q21"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q21"><h4>Sometimes</h4></div>
+              <div class="options q21"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q21"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">I avoid situations because of anxiety</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q22"><h4>Not at all</h4></div>
+              <div class="options q22"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q22"><h4>Sometimes</h4></div>
+              <div class="options q22"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q22"><h4>Usually</h4></div>
+            </div>
+          </div>
+          <div class="question">Feeling lightheaded or faint</div>
+          <div class="option">
+            <div class="1strow">
+              <div class="options q23"><h4>Not at all</h4></div>
+              <div class="options q23"><h4>Just a little</h4></div>
+            </div>
+            <div class="2ndrow">
+              <div class="options q23"><h4>Sometimes</h4></div>
+              <div class="options q23"><h4>Often</h4></div>
+            </div>
+            <div class="3rdrow">
+              <div class="options q23"><h4>Usually</h4></div>
+            </div> 
+          </div>-->
+          <!-- <button class="btn btn-primary" id="previousQuestion">Previous</button> -->
+          <button class="next-question-btn" id="nextQuestion">Next</button>
+          <button class="check-result-btn hidden" id="checkResult">
+            Check Result
+          </button>
         </div>
-        <div class="question">Sweating</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q2"><h4>Not at all</h4></div>
-          <div class="options q2"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q2"><h4>Sometimes</h4></div>
-          <div class="options q2"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q2"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Trembling or shaking</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q3"><h4>Not at all</h4></div>
-          <div class="options q3"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q3"><h4>Sometimes</h4></div>
-          <div class="options q3"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q3"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Shortness of breath</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q4"><h4>Not at all</h4></div>
-          <div class="options q4"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q4"><h4>Sometimes</h4></div>
-          <div class="options q4"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q4"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Afraid or scared</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q5"><h4>Not at all</h4></div>
-          <div class="options q5"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q5"><h4>Sometimes</h4></div>
-          <div class="options q5"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q5"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Chest pain or discomfort</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q6"><h4>Not at all</h4></div>
-          <div class="options q6"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q6"><h4>Sometimes</h4></div>
-          <div class="options q6"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q6"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Nausea or abdominal distress</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q7"><h4>Not at all</h4></div>
-          <div class="options q7"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q7"><h4>Sometimes</h4></div>
-          <div class="options q7"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q7"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Feeling dizzy or unsteady</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q8"><h4>Not at all</h4></div>
-          <div class="options q8"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q8"><h4>Sometimes</h4></div>
-          <div class="options q8"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q8"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Fear of losing control or going crazy</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q9"><h4>Not at all</h4></div>
-          <div class="options q9"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q9"><h4>Sometimes</h4></div>
-          <div class="options q9"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q9"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Numbness or tingling sensations</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q10"><h4>Not at all</h4></div>
-          <div class="options q10"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q10"><h4>Sometimes</h4></div>
-          <div class="options q10"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q10"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Chills or hot flashes</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q11"><h4>Not at all</h4></div>
-          <div class="options q11"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q11"><h4>Sometimes</h4></div>
-          <div class="options q11"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q11"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Fear of dying</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q12"><h4>Not at all</h4></div>
-          <div class="options q12"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q12"><h4>Sometimes</h4></div>
-          <div class="options q12"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q12"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Constant or persitant worry</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q13"><h4>Not at all</h4></div>
-          <div class="options q13"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q13"><h4>Sometimes</h4></div>
-          <div class="options q13"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q13"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Feeling of choking</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q14"><h4>Not at all</h4></div>
-          <div class="options q14"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q14"><h4>Sometimes</h4></div>
-          <div class="options q14"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q14"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Unable to relax </div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q15"><h4>Not at all</h4></div>
-          <div class="options q15"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q15"><h4>Sometimes</h4></div>
-          <div class="options q15"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q15"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Feeling of being unreal</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q16"><h4>Not at all</h4></div>
-          <div class="options q16"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q16"><h4>Sometimes</h4></div>
-          <div class="options q16"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q16"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Nervous</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q17"><h4>Not at all</h4></div>
-          <div class="options q17"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q17"><h4>Sometimes</h4></div>
-          <div class="options q17"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q17"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Feeling shaky or wobbly </div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q18"><h4>Not at all</h4></div>
-          <div class="options q18"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q18"><h4>Sometimes</h4></div>
-          <div class="options q18"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q18"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Irritable or difficulty sleeping</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q20"><h4>Not at all</h4></div>
-          <div class="options q20"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q20"><h4>Sometimes</h4></div>
-          <div class="options q20"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q20"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Trembling Hands</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q21"><h4>Not at all</h4></div>
-          <div class="options q21"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q21"><h4>Sometimes</h4></div>
-          <div class="options q21"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q21"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">I avoid situations becuase of anxiety</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q22"><h4>Not at all</h4></div>
-          <div class="options q22"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q22"><h4>Sometimes</h4></div>
-          <div class="options q22"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q22"><h4>Usually</h4></div></div>
-        </div>
-        <div class="question">Feeling lightheaded or faint</div>
-        <div class="option">
-          <div class="1strow">
-          <div class="options q23"><h4>Not at all</h4></div>
-          <div class="options q23"><h4>Just a little</h4></div>
-        </div>
-        <div class="2ndrow">
-          <div class="options q23"><h4>Sometimes</h4></div>
-          <div class="options q23"><h4>Often</h4></div></div>
-        <div class="3rdrow">
-          <div class="options q23"><h4>Usually</h4></div></div>
-        </div>
-        <button class="btn btn-primary">
-          <span><a onclick="fetchScore()">Check your result</a></span>
-        </button>
-      </div>
       </div>
     </section>
     <footer class="footer">
