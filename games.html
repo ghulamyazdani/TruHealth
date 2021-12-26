@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-32x32.png" />
+    <link rel="manifest" href="./Assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>TruHealth-Games</title>
+    <!-- css -->
+    <link href="./Assets/Css/style.css" rel="stylesheet" type="text/css" />
+    <script src="./Script/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Patrick+Hand&family=Poppins:wght@200;300&family=Raleway:wght@300&family=Ubuntu:wght@300&family=Zen+Antique&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  </head>
+
+  <body onload="loaded()">
+    <div id="loader"></div>
+    <header>
+      <a href="./index.html"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
+      <nav class="navbar">
+        <div class="content">
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li class="items"><a href="./index.html">Home</a></li>
+            <li class="items"><a href="./info.html">Info</a></li>
+            <li class="items alt"><a href="./games.html">Games</a></li>
+            <li class="items"><a href="./gethelp.html">GetHelp</a></li>
+            <li class="items"><a href="./Audio_player.html">Audio player</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <center>
+      <h1 class="game-list--heading">Games</h1>
+      <div class="gamess">
+        <div class="game-list">
+          <div class="list-card">
+            <div class="list-card--image">
+              <img src="./Assets/Images/quiz.jpg" alt="memorygame" />
+            </div>
+            <div class="list-card--content">
+              <h2 class="list-card--heading">Quiz</h2>
+              <p class="list-card--text">
+                Its a mental state assessment quiz. You will be given a set of questions. From your responses our
+                algorithm will be able to determine your mental state and it'll create a playlist for you. Listen to the
+                playlist and you'll be able to improve your mental state.
+              </p>
+              <a href="./quiz.html" class="list-card--btn">Play</a>
+            </div>
+          </div>
+          <div class="list-card">
+            <div class="list-card--image">
+              <img src="./Assets/Images/sudoku.jpg" alt="sudoku" />
+            </div>
+            <div class="list-card--content">
+              <h2 class="list-card--heading">Sudoku</h2>
+              <p class="list-card--text">
+                Sudoku is a logic-based, combinatorial number-placement puzzle. In classic sudoku, the objective is to
+                fill a 9 × 9 grid with digits so that each column, each row, and each of the nine 3 × 3 subgrids that
+                compose the grid contain all of the digits from 1 to 9.
+              </p>
+              <a href="./sudoku.html" class="list-card--btn">Play</a>
+            </div>
+          </div>
+          <div class="list-card">
+            <div class="list-card--image">
+              <img src="./Assets/Images/memorygame.jpg" alt="memorygame" />
+            </div>
+            <div class="list-card--content">
+              <h2 class="list-card--heading">Memory Game</h2>
+              <p class="list-card--text">
+                Test your memory with this memory game. The higher the number, the more cards are in the memo game. On
+                the game board, there are always two identical images. Start the game by flipping a card. Then try to
+                find another card that has the same image as the first.
+              </p>
+              <a href="./memory-game.html" class="list-card--btn">Play</a>
+            </div>
+          </div>
+
+          <div class="list-card">
+            <div class="list-card--image">
+              <img src="./Assets/Images/laugh.jpg" alt="memorygame" />
+            </div>
+            <div class="list-card--content">
+              <h2 class="list-card--heading">Jokes And Quotes</h2>
+              <p class="list-card--text">
+                Enjoy the best jokes and quotes from the internet. You can also share those jokes and quotes with your
+                friend. IF you are feeling low uplift your mood by enjoying and sharing the jokes and quotes.
+              </p>
+              <a href="./fun.html" class="list-card--btn">Play</a>
+            </div>
+          </div>
+          <div class="list-card">
+            <div class="list-card--image">
+              <img src="./Assets/Images/mood-map.png" alt="memorygame" />
+            </div>
+            <div class="list-card--content">
+              <h2 class="list-card--heading">Mood Map</h2>
+              <p class="list-card--text">
+                Create a Mood Map to know your mood and see how it affects your health. In Mood Map your mood will be
+                detected from real time video feed. You can also take a snapshot of your Mood Map and share it with your
+                friends or in social media.
+              </p>
+              <a href="./mood.html" class="list-card--btn">Visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <footer class="footer">
+      <p>Made with <i class="fa fa-heart pulse"></i> by Team TruHealth</p>
+    </footer>
+    <script src="./Script/script.js"></script>
+    <script src="./Script/quiz.js"></script>
+  </body>
+</html>
