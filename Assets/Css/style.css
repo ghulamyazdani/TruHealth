@@ -14,6 +14,50 @@ body {
   background-size: cover;
   font-family: "Poppins", sans-serif;
 }
+.options{
+ width:13rem;
+  background-color: #49654C;
+  border-radius: 4rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+.question{
+  font-size: 23px;
+  text-align: left;
+  margin-left: 7rem;
+  margin-bottom: 2rem;
+}
+.anxiety{
+  font-family: "Raleway", sans-serif !important;
+  border-radius: 20rem;
+  font-size: medium;
+  width:15rem;
+  height: 3rem;
+  margin-left: 5rem;
+  margin-top: 30px;
+  color: white;
+  border: none;
+  background-color:#49654C  ;
+  cursor: pointer;
+}
+.option{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center;
+   */
+   margin-left: 5rem;
+   margin-bottom: 2rem;
+}
+.options h4{
+  color: white;
+  background-color: #49654C;
+  width: 13rem;
+}
+.options.active h4{
+  color: black;
+  background-color: white;
+}
 
 h1 {
   font-family: "Raleway", sans-serif !important;
@@ -666,6 +710,22 @@ html {
 .navbar.sticky .icon.cancel-btn {
   top: 10px;
 }
+
+.resultbtn{
+  background-color: #fbbe28;
+  border-radius: 1rem;
+}
+
+.Results :hover{
+  background-color: #d3a531;
+  cursor: pointer;
+}
+
+.resultbtn :hover{
+  color: white;
+}
+
+
 @media (max-width: 1115px) {
   .navbar {
     background-color: white;
