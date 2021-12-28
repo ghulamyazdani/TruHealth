@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ddeccd;
+}
+.container {
+  display: flex;
+
+  width: 70vw;
+  margin: 2rem auto;
+}
+
+.videoFeed {
+  display: flex;
+  flex-direction: column;
+}
+
+.mycanvas {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.canvas-heading {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#snapshot {
+  position: relative;
+}
+.canvas {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 2;
+}
+#myVidPlayer,
+#firstCanvas {
+  padding: 2rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.game-header {
+  height: 4rem;
+  margin: 1rem 0 1.6rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.game-header img {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  color: white;
+  display: inline-block;
+  margin: 8px auto 0 auto;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #1f4600;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+video,
+canvas {
+  width: 640px;
+  height: 480px;
+}
+
+.header {
+  text-align: center;
+}
+.heading {
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.description {
+  width: 60vw;
+  margin: 0.6rem auto;
+  line-height: 1.1;
+}
+
+.back-btn {
+  display: block;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  margin: 10px auto;
+  text-decoration: none;
+  font-size: 18px;
+  width: 7rem;
+  background: #c0ceb2;
+  border: none;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+}
+.back-btn a {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 1rem auto;
+  }
+  video,
+  canvas {
+    width: 480px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    width: 100vw;
+    text-align: center;
+  }
+  .description {
+    width: 100vw;
+  }
+  video,
+  canvas {
+    width: 90vw;
+    height: 260px;
+  }
+}
