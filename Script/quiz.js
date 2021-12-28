@@ -98,7 +98,8 @@ function fetchScore(){
     <h3>Results of Your Anxiety Screening Quiz </h3>
     <p>Based upon your responses to this anxiety screening measure, it appears that you may be suffering from moderate anxiety, symptoms that might typically qualify you for the diagnosis of an anxiety disorder.<br><br>
     Sometimes people who feel such anxiety symptoms don't realize that their body may be trying to tell them something. Look for patterns in your behavior, such as when and what circumstances under which you experience the symptoms you've described. For example, if it occurs prior to public speaking and your job requires a lot of presentations you may want to find ways to calm yourself before speaking or let others do some of the presentations. </p>
-    
+    <h2>hi </h2>
+    <h2>hi </h2>
     
     
     
@@ -111,119 +112,6 @@ function fetchScore(){
     <h2>Score is ${scoreAnxiety}</h2>
     <h3>Results of Your Anxiety Screening Quiz </h3>
     <p>Based upon your responses to this screening measure , Your responses are similar to others who experience severe anxiety symptoms.<br>We recommend consider reaching out to a qualified professional about your symptoms. </p>
-    
-    
-    
-    
-    `)
-  }
-  
-  
-}
-function fetchScoreDepression(){
-  var scoreDepression=0;
-  const answers=document.querySelectorAll('.active');
-  answers.forEach(add);
-  function add (value){
-    if(value.innerText=='Sometimes'){
-      scoreDepression+=2;
-    }
-    else if(value.innerText=='Usually'){
-      scoreDepression+=4;
-    }
-    else if(value.innerText=='Just a little'){
-      scoreDepression+=1;
-    }
-    else if(value.innerText=='Often'){
-      scoreDepression+=3;
-    }
-    
-    
-  }
-
-  const test =document.querySelector(".depression-test");
-  test.style.display="none";
-  var container1=$(".wid-main");
-  if(scoreDepression>=0&&scoreDepression<=9){
-    container1.append(`
-    <h1>No Depression</h1>
-    <h2>Score is ${scoreDepression}</h2>
-    <h3>Results of Your Depression Screening Quiz </h3>
-    <p>You've answered this depression test in a manner that suggests that while you may occasionally be experiencing some depressive symptoms from time to time, you're not likely to be suffering a major depressive episode at present. Most people experience depressive feelings from time to time in their lives -- this is normal and expected.
-    <br><br>
-    If, however, you are experiencing depressive symptoms strongly enough that they are interferring with your daily life functioning, you are strongly advised to consult a trained mental health professional for further consultation. Only a mental health professional will be able to make a real and valid diagnosis. </p>
-    
-    
-    
-    
-    
-    `)  
-  }
-  else if(scoreDepression>=10&&scoreDepression<=17){
-    container1.append(`
-    <h1>Possible mild Depression</h1>
-    <h2>Score is ${scoreDepression}</h2>
-    <h3>Results of Your Depression Screening Quiz </h3>
-    <p>Based upon your responses to this depression test, you have just a few of the symptoms associated with clinical depression. For most people, this kind of response is likely an indication of the normal ups and downs associated with life. It is unlikely for a person in this response range to qualify for a diagnosis of clinical depression.
-    <br><br>
-    You should not take this as a diagnosis of any sort, or a recommendation for treatment. However, some people may benefit from a consultation with a trained mental health professional if they are experiencing any difficulties in daily functioning. </p>
-    
-    
-    
-    
-    
-    `)
-  }  
-  else if(scoreDepression>=18&&scoreDepression<=21){
-    container1.append(`
-    <h1>Borderline Depression</h1>
-    <h2>Your Score is ${scoreDepression}</h2>
-    <h3>Results of Your Depression Screening Quiz </h3>
-    <p>Based upon your responses to this depression test, you have some of the symptoms associated with clinical depression. People who score in this range occasionally complain of feeling unmotivated, lacking energy, and having sleep problems. They feel lonely once in awhile but rarely feel hopeless or completely alone.
-    <br><br>
-    You should not take this as a diagnosis of any sort, or a recommendation for treatment. However, some people may benefit from a consultation with a trained mental health professional if they are experiencing any difficulties in daily functioning. </p>
-    
-    
-    
-    
-    `)
-  }
-  else if(scoreDepression>=22&&scoreDepression<=35){
-    container1.append(`
-    <h1>Mild to moderate Depression</h1>
-    <h2>Score is ${scoreDepression}</h2>
-    <h3>Results of Your Depression Screening Quiz </h3>
-    <p>Based upon your responses to this depression test, you have some of the symptoms associated with clinical depression. People who score in this range occasionally complain of feeling unmotivated, lacking energy, and having sleep problems. They feel lonely once in awhile but rarely feel hopeless or completely alone.<br><br>
-
-    You should not take this as a diagnosis of any sort, or a recommendation for treatment. However, some people may benefit from a consultation with a trained mental health professional if they are experiencing any difficulties in daily functioning. </p>
-    
-    
-    
-    
-    `)
-  }
-  else if(scoreDepression>=36&&scoreDepression<=53){
-    container1.append(`
-    <h1>Moderate to severe Depression</h1>
-    <h2>Score is ${scoreDepression}</h2>
-    <h3>Results of Your Depression Screening Quiz </h3>
-    <p>Based upon your responses to this depression test, you have some of the symptoms associated with clinical depression. People who score in this range occasionally complain of feeling unmotivated, lacking energy, and having sleep problems. They feel lonely once in awhile but rarely feel hopeless or completely alone.<br><br>
-
-    You should not take this as a diagnosis of any sort, or a recommendation for treatment. However, some people may benefit from a consultation with a trained mental health professional if they are experiencing any difficulties in daily functioning. </p>
-    
-    
-    
-    
-    `)
-  }
-  else if(scoreDepression>=54){
-    container1.append(`
-    <h1>Severe Depression</h1>
-    <h2>Score is ${scoreDepression}</h2>
-    <h3>Results of Your Depression Screening Quiz </h3>
-    <p>Based upon your responses to this depression test, you have some of the symptoms associated with clinical depression. People who score in this range occasionally complain of feeling unmotivated, lacking energy, and having sleep problems. They feel lonely once in awhile but rarely feel hopeless or completely alone.
-    <br><br>
-    You should not take this as a diagnosis of any sort, or a recommendation for treatment. However, some people may benefit from a consultation with a trained mental health professional if they are experiencing any difficulties in daily functioning. </p>
     
     
     

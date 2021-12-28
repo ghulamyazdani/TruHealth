@@ -43,23 +43,6 @@ body {
   background-color:#49654C  ;
   cursor: pointer;
 }
-.depression{
-  font-family: "Raleway", sans-serif !important;
-  border-radius: 20rem;
-  font-size: medium;
-  width:15rem;
-  height: 3rem;
-  margin-left: 5rem;
-  margin-top: 30px;
-  color: white;
-  border: none;
-  background-color:#49654C  ;
-  cursor: pointer;
-}
-.options h4:hover{
-  color: black;
-  background-color: white;
-}
 .option{
   display: flex;
   flex-direction: row;
@@ -521,7 +504,6 @@ html {
     width: 50%;
   }
 }
-
 @supports (display: grid) {
   .grid-row {
     align-items: start;
