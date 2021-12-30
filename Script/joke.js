@@ -46,3 +46,4 @@ btnQuoteCopt.onclick = function () {
     let input = quote.textContent.trim();
     navigator.clipboard.writeText(input);
 }
+
