@@ -16,7 +16,6 @@
 .header {
   width: 100%;
   text-align: center;
-  height: 20%;
   background-color: #49654c;
   padding: 2rem;
   color: #fff;
@@ -28,7 +27,6 @@
   font-size: 4rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  z-index: 2;
 }
 .faq-section {
   max-width: 80rem;
@@ -133,4 +131,52 @@ footer {
 .back-btn a {
   text-decoration: none;
   color: #000000;
+}
+
+@media (max-width: 1200px) {
+  .faq-section {
+    width: 80vw;
+    padding: 0 1rem 2rem 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .faq-card {
+    width: 100%;
+  }
+  .faq-section {
+    width: 80vw;
+    padding: 0 1rem 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 3rem;
+    margin-bottom: 6px;
+  }
+  .faq-section {
+    width: 90vw;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .faq-card {
+    width: 100%;
+    padding: 0.6rem;
+  }
+  .faq-question {
+    gap: 12px;
+  }
+  .faq-question--text {
+    font-size: 14px;
+  }
+
+  .faq-question i {
+    font-size: 14px;
+  }
+
+  .faq-answer {
+    font-size: 12px;
+    padding-top: 8px;
+    line-height: 1.1;
+  }
 }
