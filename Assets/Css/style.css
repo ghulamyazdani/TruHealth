@@ -14,47 +14,47 @@ body {
   background-size: cover;
   font-family: "Poppins", sans-serif;
 }
-.options {
-  width: 13rem;
-  background-color: #49654c;
+.options{
+ width:13rem;
+  background-color: #49654C;
   border-radius: 4rem;
   margin: 1rem;
   cursor: pointer;
 }
-.question {
+.question{
   font-size: 23px;
   text-align: left;
   margin-left: 7rem;
   margin-bottom: 2rem;
 }
-.anxiety {
+.anxiety{
   font-family: "Raleway", sans-serif !important;
   border-radius: 20rem;
   font-size: medium;
-  width: 15rem;
+  width:15rem;
   height: 3rem;
   margin-left: 5rem;
   margin-top: 30px;
   color: white;
   border: none;
-  background-color: #49654c;
+  background-color:#49654C  ;
   cursor: pointer;
 }
-.option {
+.option{
   display: flex;
   flex-direction: row;
   /* justify-content: center;
   align-items: center;
    */
-  margin-left: 5rem;
-  margin-bottom: 2rem;
+   margin-left: 5rem;
+   margin-bottom: 2rem;
 }
-.options h4 {
+.options h4{
   color: white;
-  background-color: #49654c;
+  background-color: #49654C;
   width: 13rem;
 }
-.options.active h4 {
+.options.active h4{
   color: black;
   background-color: white;
 }
@@ -280,7 +280,7 @@ center img {
   margin-top: 2rem;
   width: 60%;
   margin-left: 20%;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 .wid-info {
   width: 80%;
@@ -711,19 +711,20 @@ html {
   top: 10px;
 }
 
-.resultbtn {
+.resultbtn{
   background-color: #fbbe28;
   border-radius: 1rem;
 }
 
-.Results :hover {
+.Results :hover{
   background-color: #d3a531;
   cursor: pointer;
 }
 
-.resultbtn :hover {
+.resultbtn :hover{
   color: white;
 }
+
 
 @media (max-width: 1115px) {
   .navbar {
@@ -1076,16 +1077,25 @@ h3 {
 .next-question-btn,
 .check-result-btn {
   cursor: pointer;
-  color: #fff;
+  color: black;
   text-align: center;
   padding: 0.6rem 1rem;
   margin: 16px auto;
   text-decoration: none;
   font-size: 1.4rem;
-  background: #49654c;
+  /* background: #49654c; */
+  background-color: #fbbe28;
+  border-radius: 1rem;
   border: none;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 19px;
+}
+
+.next-question-btn:hover , 
+.check-result-btn:hover {
+  background-color: #d3a531;
+  cursor: pointer;
+  color: white;
 }
 
 .progress-bar {
@@ -1137,11 +1147,19 @@ h3 {
   width: 15rem;
   height: 3rem;
   margin: 1.2rem auto;
-  color: white;
+  color: black;
   border: none;
-  background-color: #49654c;
+  /* background-color: #49654c; */
+  background-color: #fbbe28;
+  border-radius: 1rem;
   cursor: pointer;
 }
+
+.anxiety :hover{
+  color: white;
+  cursor: pointer;
+}
+
 .option {
   display: flex;
   flex-direction: column;
@@ -1167,8 +1185,4 @@ h3 {
   .progress-bar {
     height: 10px;
   }
-}
-
-.gethelp-btn {
-  display: flex;
 }
