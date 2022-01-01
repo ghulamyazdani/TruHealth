@@ -23,6 +23,265 @@ var choice13 = $('#btn13');
 
 var choice_checker = 0;
 
+const optionsAnxiety = document.querySelectorAll('.options');
+
+
+/////////my doing//////////////////
+const questions = [
+  {
+    question: "1. Pounding heart",
+    score: 0,
+  },
+  {
+    question: "2. Sweating",
+    score: 0,
+  },
+  {
+    question: "3. Trembling or shaking",
+    score: 0,
+  },
+  {
+    question: "4. Shortness of breath",
+    score: 0,
+  },
+  {
+    question: "5. Afraid or scared",
+    score: 0,
+  },
+  {
+    question: "6. Chest pain or discomfort",
+    score: 0,
+  },
+  {
+    question: "7. Nausea or abdominal distress",
+    score: 0,
+  },
+  {
+    question: "8. Feeling dizzy or unsteady",
+    score: 0,
+  },
+  {
+    question: "9. Fear of losing control or going crazy",
+    score: 0,
+  },
+  {
+    question: "10. Numbness or tingling sensations",
+    score: 0,
+  },
+  {
+    question: "11. Chills or hot flashes",
+    score: 0,
+  },
+  {
+    question: "12. Fear of dying",
+    score: 0,
+  },
+  {
+    question: "13. Constant or persistent worry",
+    score: 0,
+  },
+  {
+    question: "14. Feeling of choking",
+    score: 0,
+  },
+  {
+    question: "15. Unable to relax",
+    score: 0,
+  },
+  {
+    question: "16. Feeling of being unreal",
+    score: 0,
+  },
+  {
+    question: "17. Nervous",
+    score: 0,
+  },
+  {
+    question: "18. Feeling shaky or wobbly",
+    score: 0,
+  },
+  {
+    question: "19. Irritable or difficulty sleeping",
+    score: 0,
+  },
+  {
+    question: "20. Trembling Hands",
+    score: 0,
+  },
+  {
+    question: "21. I avoid situations because of anxiety",
+    score: 0,
+  },
+  {
+    question: "22. Feeling lightheaded or faint",
+    score: 0,
+  }
+]
+let i = 0;
+const nextButton = document.querySelector('#nextQuestion');
+const previousButton = document.querySelector('#previousQuestion');
+let question = document.querySelector('.question');
+const test = document.querySelector(".test");
+var container1 = $(".wid-main");
+let checkResult = document.querySelector('#checkResult');
+let progressBar = document.querySelector('.progress-bar-fill');
+
+questionGenerator(i);
+
+nextButton.addEventListener('click', () => {
+
+  optionsAnxiety.forEach(function (el) {
+
+    if (el.classList.contains("active")) {
+      el.classList.remove("active");
+      if (i < questions.length - 1) {
+        i++;
+        questionGenerator(i);
+      }
+    }
+
+  });
+
+
+})
+
+function questionGenerator(i) {
+  progressBar.style.width = (i + 1) * (100 / questions.length) + '%';
+  question.innerText = questions[i].question;
+  console.log(questions[i].question);
+  if (i == questions.length - 1) {
+    checkResult.classList.remove('hidden');
+    nextButton.classList.add('hidden');
+  }
+}
+
+optionsAnxiety.forEach(function (el, key) {
+  el.addEventListener('click', function (e) {
+    let value = e.target.textContent;
+
+    if (value == "Usually") {
+      questions[i].score = 4;
+    } else if (value == "Sometimes") {
+      questions[i].score = 2;
+    } else if (value == "Just a little") {
+      questions[i].score = 1;
+    } else if (value == "Often") {
+      questions[i].score = 3;
+    } else {
+      questions[i].score = 0;
+    }
+    el.classList.toggle("active");
+    optionsAnxiety.forEach(function (ell, els) {
+      if (key !== els) {
+        ell.classList.remove('active');
+      }
+    });
+  });
+});
+
+checkResult.addEventListener('click', () => {
+  let score = 0;
+  for (let i = 0; i < questions.length; i++) {
+    score += questions[i].score;
+  }
+  checkResult.classList.add('hidden');
+  console.log(score);
+  test.style.display = "none";
+  if (score >= -1 && score <= 5) {
+    container1.append(`
+        <h1>No Anxiety</h1>
+        <h2>Score is ${score}</h2>
+        <h3>Results of Your Anxiety Screening Quiz </h3>
+        <p>You have answered this anxiety screening in such a way as to suggest that you are not likely currently suffering from an anxiety disorder. However, this little degree of anxiety may actually be a sign of anxiety in your life. Individuals who score in this low range sometimes indicate that they may be detached from themselves, others, or their environment. Typically this is not healthy for most and should be avoided. You can help yourself by making a more concerted effort to become reattached to significant others and your environment. </p>
+        `)
+  } else if (score >= 6 && score <= 22) {
+    container1.append(`
+        <h1>Mid to little anxiety</h1>
+        <h2>Score is ${score}</h2>
+        <h3>Results of Your Anxiety Screening Quiz </h3>
+        <p>You have answered this anxiety screening in such a way as to suggest that you are not likely currently suffering from an anxiety disorder. Remember that a little anxiety in normal, everyday life is to be expected and is a good thing. Nobody should be without any anxiety whatsoever, as anxiety is our body's way of telling us that we should pay closer attention to a situation, event or person in our lives (even if that person is ourselves). Scoring in this range suggests you have that normal level of anxiety but would not likely qualify for an anxiety disorder diagnosis. </p>
+        `)
+  }
+  else if (score >= 23 && score <= 37) {
+    container1.append(`
+        <h1>Moderate Anxiety</h1>
+        <h2>Your Score is ${score}</h2>
+        <h3>Results of Your Anxiety Screening Quiz </h3>
+        <p>Based upon your responses to this anxiety screening measure, it appears that you may be suffering from moderate anxiety, symptoms that might typically qualify you for the diagnosis of an anxiety disorder.<br><br>
+        Sometimes people who feel such anxiety symptoms don't realize that their body may be trying to tell them something. Look for patterns in your behavior, such as when and what circumstances under which you experience the symptoms you've described. For example, if it occurs prior to public speaking and your job requires a lot of presentations you may want to find ways to calm yourself before speaking or let others do some of the presentations. </p>    
+        `)
+  }
+  else if (score >= 38) {
+    container1.append(`
+        <h1>Severe Anxiety</h1>
+        <h2>Score is ${score}</h2>
+        <h3>Results of Your Anxiety Screening Quiz </h3>
+        <p>Based upon your responses to this screening measure , Your responses are similar to others who experience severe anxiety symptoms.<br>We recommend consider reaching out to a qualified professional about your symptoms. </p>
+        `)
+  }
+})
+
+
+/////end of my work/////////////
+
+// function fetchScore() {
+//   var scoreAnxiety = 0;
+//   const answers = document.querySelectorAll('.active');
+//   answers.forEach(add);
+//   function add(value) {
+//     if (value.innerText == 'Sometimes') {
+//       scoreAnxiety += 2;
+//     }
+//     else if (value.innerText == 'Usually') {
+//       scoreAnxiety += 4;
+//     }
+//     else if (value.innerText == 'Just a little') {
+//       scoreAnxiety += 1;
+//     }
+//     else if (value.innerText == 'Often') {
+//       scoreAnxiety += 3;
+//     }
+//   }
+
+//   const test = document.querySelector(".test");
+//   test.style.display = "none";
+//   var container1 = $(".wid-main");
+//   if (scoreAnxiety >= 0 && scoreAnxiety <= 5) {
+//     container1.append(`
+//     <h1>No Anxiety</h1>
+//     <h2>Score is ${scoreAnxiety}</h2>
+//     <h3>Results of Your Anxiety Screening Quiz </h3>
+//     <p>You have answered this anxiety screening in such a way as to suggest that you are not likely currently suffering from an anxiety disorder. However, this little degree of anxiety may actually be a sign of anxiety in your life. Individuals who score in this low range sometimes indicate that they may be detached from themselves, others, or their environment. Typically this is not healthy for most and should be avoided. You can help yourself by making a more concerted effort to become reattached to significant others and your environment. </p>
+//     `)
+//   }
+//   else if (scoreAnxiety >= 6 && scoreAnxiety <= 22) {
+//     container1.append(`
+//     <h1>Mid to little anxiety</h1>
+//     <h2>Score is ${scoreAnxiety}</h2>
+//     <h3>Results of Your Anxiety Screening Quiz </h3>
+//     <p>You have answered this anxiety screening in such a way as to suggest that you are not likely currently suffering from an anxiety disorder. Remember that a little anxiety in normal, everyday life is to be expected and is a good thing. Nobody should be without any anxiety whatsoever, as anxiety is our body's way of telling us that we should pay closer attention to a situation, event or person in our lives (even if that person is ourselves). Scoring in this range suggests you have that normal level of anxiety but would not likely qualify for an anxiety disorder diagnosis. </p>
+//     `)
+//   }
+//   else if (scoreAnxiety >= 23 && scoreAnxiety <= 37) {
+//     container1.append(`
+//     <h1>Moderate Anxiety</h1>
+//     <h2>Your Score is ${scoreAnxiety}</h2>
+//     <h3>Results of Your Anxiety Screening Quiz </h3>
+//     <p>Based upon your responses to this anxiety screening measure, it appears that you may be suffering from moderate anxiety, symptoms that might typically qualify you for the diagnosis of an anxiety disorder.<br><br>
+//     Sometimes people who feel such anxiety symptoms don't realize that their body may be trying to tell them something. Look for patterns in your behavior, such as when and what circumstances under which you experience the symptoms you've described. For example, if it occurs prior to public speaking and your job requires a lot of presentations you may want to find ways to calm yourself before speaking or let others do some of the presentations. </p>    
+//     `)
+//   }
+//   else if (scoreAnxiety >= 38) {
+//     container1.append(`
+//     <h1>Severe Anxiety</h1>
+//     <h2>Score is ${scoreAnxiety}</h2>
+//     <h3>Results of Your Anxiety Screening Quiz </h3>
+//     <p>Based upon your responses to this screening measure , Your responses are similar to others who experience severe anxiety symptoms.<br>We recommend consider reaching out to a qualified professional about your symptoms. </p>
+//     `)
+//   }
+
+
+// }
 function filler1() {
 
   if (choice_checker == 0) {
@@ -407,9 +666,5 @@ width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encryp
     `)
   }
 }
-
-
-
-
 
 
