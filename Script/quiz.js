@@ -668,7 +668,3 @@ width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encryp
 }
 
 
-
-
-
-
