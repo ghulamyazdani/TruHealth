@@ -14,47 +14,47 @@ body {
   background-size: cover;
   font-family: "Poppins", sans-serif;
 }
-.options{
- width:13rem;
-  background-color: #49654C;
+.options {
+  width: 13rem;
+  background-color: #49654c;
   border-radius: 4rem;
   margin: 1rem;
   cursor: pointer;
 }
-.question{
+.question {
   font-size: 23px;
   text-align: left;
   margin-left: 7rem;
   margin-bottom: 2rem;
 }
-.anxiety{
+.anxiety {
   font-family: "Raleway", sans-serif !important;
   border-radius: 20rem;
   font-size: medium;
-  width:15rem;
+  width: 15rem;
   height: 3rem;
   margin-left: 5rem;
   margin-top: 30px;
   color: white;
   border: none;
-  background-color:#49654C  ;
+  background-color: #49654c;
   cursor: pointer;
 }
-.option{
+.option {
   display: flex;
   flex-direction: row;
   /* justify-content: center;
   align-items: center;
    */
-   margin-left: 5rem;
-   margin-bottom: 2rem;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
 }
-.options h4{
+.options h4 {
   color: white;
-  background-color: #49654C;
+  background-color: #49654c;
   width: 13rem;
 }
-.options.active h4{
+.options.active h4 {
   color: black;
   background-color: white;
 }
@@ -280,7 +280,7 @@ center img {
   margin-top: 2rem;
   width: 60%;
   margin-left: 20%;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 .wid-info {
   width: 80%;
@@ -711,20 +711,19 @@ html {
   top: 10px;
 }
 
-.resultbtn{
+.resultbtn {
   background-color: #fbbe28;
   border-radius: 1rem;
 }
 
-.Results :hover{
+.Results :hover {
   background-color: #d3a531;
   cursor: pointer;
 }
 
-.resultbtn :hover{
+.resultbtn :hover {
   color: white;
 }
-
 
 @media (max-width: 1115px) {
   .navbar {
@@ -1172,4 +1171,8 @@ h3 {
   .progress-bar {
     height: 10px;
   }
+}
+
+.gethelp-btn {
+  display: flex;
 }
