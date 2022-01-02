@@ -812,3 +812,24 @@ iframe {
   background: #93a681;
   color: #ebebe9;
 }
+#button_Tips{
+  width: 25rem;
+  margin: 0 auto;
+  min-height: 5rem;
+  background: #c0ceb2;
+  box-shadow: inset 5px 5px 10px rgb(0 0 0 / 36%), inset 15px 10px 15px #c0ceb2, 5px 5px 10px rgb(0 0 0 / 36%), 5px 5px 10px rgb(0 0 0 / 36%), inset -10px -10px 15px #c0ceb2;
+  border-radius: 146px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color:#c0ceb2;
+}
+#button_Tips:hover{
+
+/* background: #253628; */
+background: #93a681;
+color:red;
+}
