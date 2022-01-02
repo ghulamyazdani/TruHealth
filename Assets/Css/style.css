@@ -1077,14 +1077,14 @@ h3 {
 .next-question-btn,
 .check-result-btn {
   cursor: pointer;
-  color: black;
+  color: white;
   text-align: center;
   padding: 0.6rem 1rem;
   margin: 16px auto;
   text-decoration: none;
   font-size: 1.4rem;
-  /* background: #49654c; */
-  background-color: #fbbe28;
+  background: #49654c;
+  /* background-color: #fbbe28; */
   border-radius: 1rem;
   border: none;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
@@ -1093,9 +1093,9 @@ h3 {
 
 .next-question-btn:hover , 
 .check-result-btn:hover {
-  background-color: #d3a531;
+  background: #668069;
   cursor: pointer;
-  color: white;
+  color: black;
 }
 
 .progress-bar {
@@ -1147,16 +1147,15 @@ h3 {
   width: 15rem;
   height: 3rem;
   margin: 1.2rem auto;
-  color: black;
+  color: white;
   border: none;
-  /* background-color: #49654c; */
-  background-color: #fbbe28;
+  background-color: #49654c;
   border-radius: 1rem;
   cursor: pointer;
 }
 
 .anxiety :hover{
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
