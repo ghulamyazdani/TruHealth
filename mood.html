@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-32x32.png" />
+    <link rel="manifest" href="./Assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="./Assets/Css/mood-map.css" rel="stylesheet" type="text/css" />
+    <title>TruHealth-MoodMap</title>
+    <script defer src="./Script/face-api.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <title>TruHealth-MoodMap</title>
+  </head>
+  <body>
+    <div class="game-header">
+      <a href="./index.html">
+        <img src="./Assets/Images/TruHealth-center.png" alt="TruHealth" />
+      </a>
+    </div>
+
+    <div class="header">
+      <p class="heading">Mood Map</p>
+      <p class="description">
+        Create a Mood Map to know your mood and see how it affects your health. In Mood Map your mood will be detected
+        from real time video feed. You can also take a snapshot of your Mood Map and share it with your friends or in
+        social media. Please turn on your camera and generate mood map. Stay in front of a bright light source so our
+        algorithm can detect your gender and age perfectly. Hold still your face to get accurate result. Multiple
+        persons can use this at the same time.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="videoFeed">
+        <p class="canvas-heading">Live Feed From Your Camera</p>
+        <video id="myVidPlayer" width="640" height="480" muted autoplay></video>
+        <button onclick="snapshot()">Create Mood Map</button>
+      </div>
+      <div class="mycanvas">
+        <p class="canvas-heading">Generated Mood Map</p>
+        <div id="snapshot" class="hidden">
+          <canvas id="firstCanvas"></canvas>
+        </div>
+        <button type="button" id="btnDisplay">Download A Snapshot</button>
+      </div>
+    </div>
+    <button class="back-btn"><a href="./games.html">Go Back</a></button>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"
+      integrity="sha512-OqcrADJLG261FZjar4Z6c4CfLqd861A3yPNMb+vRQ2JwzFT49WT4lozrh3bcKxHxtDTgNiqgYbEUStzvZQRfgQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./Script/mood.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-32x32.png" />
+    <link rel="manifest" href="./Assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./Assets/Css/sudoku.css" />
+    <script src="./Script/sudoku.js"></script>
+    <title>TruHealth-Sudoku</title>
+  </head>
+  <header>
+    <div class="game-header">
+      <a href="./index.html">
+        <img src="./Assets/Images/TruHealth-center.png" alt="TruHealth" />
+      </a>
+    </div>
+    <h1>Sudoku</h1>
+    <div id="setup-game">
+      <div id="diff">
+        <div>
+          <h3>Choose Difficulty:</h3>
+        </div>
+        <div>
+          <div class="wrapper">
+            <input type="radio" name="selectt" id="diff-1" value="easy" />
+            <input type="radio" name="selectt" id="diff-2" value="medium" />
+            <input type="radio" name="selectt" id="diff-3" value="hard" checked />
+            <label for="diff-1" class="diff diff-1">
+              <div class="dot"></div>
+              <span>Easy </span>
+            </label>
+            <label for="diff-2" class="diff diff-2">
+              <div class="dot"></div>
+              <span>Medium</span>
+            </label>
+            <label for="diff-3" class="diff diff-3">
+              <div class="dot"></div>
+              <span>Hard</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div id="time">
+        <div>
+          <h3>Time:</h3>
+        </div>
+        <div>
+          <div class="wrapper">
+            <input type="radio" name="select" id="time-1" value="three" />
+            <input type="radio" name="select" id="time-2" value="five" />
+            <input type="radio" name="select" id="time-3" value="ten" checked />
+            <label for="time-1" class="time time-1">
+              <div class="dot"></div>
+              <span>3 min</span>
+            </label>
+            <label for="time-2" class="time time-2">
+              <div class="dot"></div>
+              <span>5 min</span>
+            </label>
+            <label for="time-3" class="time time-3">
+              <div class="dot"></div>
+              <span>10 min</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="start-btn">Create New Game</button>
+  </header>
+  <body>
+    <div id="rules">
+      <h2>Rules</h2>
+      <p>Sudoku is a puzzle based on a small number of very simple rules:</p>
+
+      <p>Every square has to contain a single number</p>
+      <p>Only the numbers from 1 through to 9 can be used</p>
+      <p>Each 3×3 box can only contain each number from 1 to 9 once</p>
+      <p>Each vertical column can only contain each number from 1 to 9 once</p>
+      <p>Each horizontal row can only contain each number from 1 to 9 once</p>
+    </div>
+    <div id="stats" class="hidden">
+      <p id="timer">Timer</p>
+      <p id="lives">Lives</p>
+    </div>
+    <div id="game">
+      <div id="board"></div>
+      <div id="number-container" class="hidden">
+        <p id="one">1</p>
+        <p id="two">2</p>
+        <p id="three">3</p>
+        <p id="four">4</p>
+        <p id="five">5</p>
+        <p id="six">6</p>
+        <p id="seven">7</p>
+        <p id="eight">8</p>
+        <p id="nine">9</p>
+      </div>
+    </div>
+    <button class="back-btn"><a href="./games.html">Go Back</a></button>
+  </body>
+</html>

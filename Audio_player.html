@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-32x32.png" />
+    <link rel="manifest" href="./Assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script src="./Script/jquery.min.js"></script>
+    <title>TruHealth-MusicPlayer</title>
+    <link rel="stylesheet" href="./Assets/Css/Audio_player.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-header">
+        <a href="./index.html">
+          <div class="game-header--text">
+            <h2>TruHealth</h2>
+            <h2>TruHealth</h2>
+          </div>
+        </a>
+      </div>
+      <header class="f-row content-space-between align-center">
+        <div class="neu-element-small circle-btn f-column content-center align-center song-input-div">
+          <i class="fas fa-file-import"></i>
+          <input type="file" id="thefile" accept="audio/*" class="songInput" />
+        </div>
+        <p>Playing Now</p>
+        <div class="neu-element-small f-column content-center align-center volume-btn">
+          <i class="fas fa-volume-up volume-btn--up"></i>
+          <i class="fas fa-volume-down volume-btn--down"></i>
+        </div>
+      </header>
+      <div class="cover neu-element">
+        <img src="https://source.unsplash.com/300x300/?music" id="songImage" alt="Cover Art" />
+      </div>
+      <div class="info">
+        <p id="songName">Song Name</p>
+      </div>
+      <div class="progress">
+        <div class="time f-row content-space-between align-center">
+          <p id="current">0:00</p>
+          <p id="left">0:00</p>
+        </div>
+        <div class="duration">
+          <div class="track">
+            <div class="current"></div>
+          </div>
+        </div>
+      </div>
+      <div class="controls f-row content-center align-center">
+        <div class="neu-element-small circle-btn large f-column content-center align-center" id="play-pause">
+          <i class="fas fa-play"></i>
+        </div>
+      </div>
+      <audio id="audio"></audio>
+      <div class="controls f-row content-center align-center">
+        <button class="neu-element-small circle-btn f-column content-center align-center">
+          <a href="./games.html"><i class="fas fa-arrow-left"></i></a>
+        </button>
+      </div>
+      <canvas id="canvas" width="1700" height="600"></canvas>
+    </div>
+    <script src="./Script/audio.js"></script>
+  </body>
+</html>
