@@ -16,6 +16,12 @@ body {
     margin: auto;
   
   }
+  .circle-base{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background: black;
+  }
   #description{
     font-size: 1.5rem;
     margin-left:10%;
