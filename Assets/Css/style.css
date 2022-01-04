@@ -890,6 +890,23 @@ html {
   background: #93a681;
   color: #ebebe9;
 }
+
+#button_Tips{
+  width: 25rem;
+  margin: 0 auto;
+  min-height: 5rem;
+  background: #c0ceb2;
+  box-shadow: inset 5px 5px 10px rgb(0 0 0 / 36%), inset 15px 10px 15px #c0ceb2, 5px 5px 10px rgb(0 0 0 / 36%), 5px 5px 10px rgb(0 0 0 / 36%), inset -10px -10px 15px #c0ceb2;
+  border-radius: 146px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color:#c0ceb2;
+}
+
 .gamess {
   display: block;
   margin: 0 auto;
@@ -958,12 +975,15 @@ h3 {
   background: #c0ceb2;
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.36), inset -5px -5px 10px #ddeccd;
   border-radius: 21px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+   
+}
+
+#button_Tips:hover{
+
+/* background: #253628; */
+background: #93a681;
+color:red;
+  
 }
 
 .joke-text,
@@ -1077,16 +1097,25 @@ h3 {
 .next-question-btn,
 .check-result-btn {
   cursor: pointer;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 0.6rem 1rem;
   margin: 16px auto;
   text-decoration: none;
   font-size: 1.4rem;
   background: #49654c;
+  /* background-color: #fbbe28; */
+  border-radius: 1rem;
   border: none;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 19px;
+}
+
+.next-question-btn:hover , 
+.check-result-btn:hover {
+  background: #668069;
+  cursor: pointer;
+  color: black;
 }
 
 .progress-bar {
@@ -1129,6 +1158,10 @@ h3 {
   text-align: center;
   padding: 0.4rem 0;
 }
+.options:hover{
+  background-color: white;
+  color: black;
+}
 
 .anxiety {
   display: block;
@@ -1141,8 +1174,15 @@ h3 {
   color: white;
   border: none;
   background-color: #49654c;
+  border-radius: 1rem;
   cursor: pointer;
 }
+
+.anxiety :hover{
+  color: black;
+  cursor: pointer;
+}
+
 .option {
   display: flex;
   flex-direction: column;
@@ -1168,4 +1208,9 @@ h3 {
   .progress-bar {
     height: 10px;
   }
+}
+
+.gethelp-btn {
+  display: flex;
+
 }
