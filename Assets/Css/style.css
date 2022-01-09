@@ -239,7 +239,8 @@ header img {
   font-weight: 500;
   margin: 18px
 }
-/* .menu {
+/* Old Navbar
+.menu {
   position: absolute;
   top: 1.7rem;
   right: 1rem;
@@ -297,7 +298,7 @@ header li:hover {
 /* Quiz section */
 center {
   margin-top: -3rem;
-  width: 100vw;
+  width: 90vw;
 }
 
 center h1 {
@@ -1048,7 +1049,7 @@ html {
   background-color:#c0ceb2;
 }
 
-.gamess {
+.games {
   display: block;
   margin: 0 auto;
   /* background-color: #253628; */
@@ -1056,7 +1057,7 @@ html {
 }
 .game-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
   gap: 30px;
