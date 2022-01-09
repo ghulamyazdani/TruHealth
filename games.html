@@ -23,32 +23,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   </head>
 
   <body onload="loaded()">
     <div id="loader"></div>
     <header>
-      <a href="./index.html"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
-      <nav class="navbar">
-        <div class="content">
-          <ul class="menu-list">
-            <div class="icon cancel-btn">
-              <i class="fas fa-times"></i>
-            </div>
-            <li class="items"><a href="./index.html">Home</a></li>
-            <li class="items"><a href="./info.html">Info</a></li>
-            <li class="items alt"><a href="./games.html">Fun</a></li>
-            <li class="items"><a href="./gethelp.html">GetHelp</a></li>
-          </ul>
-          <div class="icon menu-btn">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
-      </nav>
+      <a href="#"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
     </header>
-    <center>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class='bx bx-menu' id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="./index.html">
+            <i class='bx bx-home-alt'></i>
+            <span class="links_name">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="./info.html">
+            <i class='bx bx-info-circle' ></i>
+            <span class="links_name">Info</span>
+          </a>
+          <span class="tooltip">Info</span>
+        </li>
+        <li>
+          <a href="./games.html">
+            <i class='bx bxl-dribbble'></i>
+            <span class="links_name">Fun & Games</span>
+          </a>
+          <span class="tooltip">Fun & Games</span>
+        </li>
+        <li>
+          <a href="./gethelp.html">
+            <i class='bx bx-first-aid' ></i>
+            <span class="links_name">Get Help</span>
+          </a>
+          <span class="tooltip">Get Help</span>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
       <h1 class="game-list--heading">Games</h1>
       <div class="gamess">
         <div class="game-list">
@@ -161,12 +183,36 @@
           </div>
         </div>
       </div>
-    </center>
+    </section>
 
     <footer class="footer">
       <p>Made with <i class="fa fa-heart pulse"></i> by Team TruHealth</p>
     </footer>
     <script src="./Script/script.js"></script>
     <script src="./Script/quiz.js"></script>
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+  
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+  
+      searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+  
+      // following are the code to change sidebar button(optional)
+      function menuBtnChange() {
+        if (sidebar.classList.contains("open")) {
+          closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+        } else {
+          closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+        }
+      }
+    </script>
   </body>
 </html>
