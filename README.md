@@ -1,4 +1,38 @@
+  ![image](https://user-images.githubusercontent.com/114678694/196738791-3f3404da-e5cf-42aa-8004-ff4819e86fa1.png)
 <h1 align="center">TruHealth</h1>
+
+TruHealth is an application that helps you to maintain **Good Health**
+<h3>TruHealth:TruHealth is a state of optimal physical, mental and social well-being and not merely the absence of disease.</h3>
+
+Hey! If you are feeling that your health is not  going in right direction or you are feeling depressed ,then **TruHealth** comes with a solution.
+
+![undraw_medicine_b-1-ol](https://user-images.githubusercontent.com/114678694/196754243-f4c2014b-ec08-4844-9942-5024496efef7.svg)
+
+
+<h2>The TruHealth helps with</h2>
+
+ - How to maintain good health
+- Provide information about mental health
+- Provide videos of mental health
+- Some quizzes,fun..
+- Some motivational thoughts
+
+<h1>Tech Stack</h1>
+
+<h2 align="center">Frontend</h1>
+
+![undraw_static_assets_rpm6 (3)](https://user-images.githubusercontent.com/114678694/196762469-db02ebb2-e263-45b3-a9c0-44a0904452fb.svg)
+
+<h2 align="center">Backend</h1>
+
+![Untitled design](https://user-images.githubusercontent.com/114678694/196764740-22e63ace-a51b-405b-9257-1700929ae867.jpg)
+
+
+<h1>Check out TruHealth </h1>
+
+https://truhealth.vercel.app/
+
+<h1>Badges</h1>
 
 <p align="center">
 <a href="https://github.com/ghulamyazdani/TruHealth"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a>
@@ -18,22 +52,19 @@
 <a href="https://github.com/ghulamyazdani/TruHealth/issues?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/ghulamyazdani/TruHealth?color=0059b3"></a>
 </p>
 
-Everyone who is feeling their mental health is not going in the right direction or they are having depression!
+<h1>Screenshots</h1>
 
-## 🌟 About
+>Interface of the TruHealth
 
-An app for all those who care about their health.
+![image](https://user-images.githubusercontent.com/114678694/196766506-611275ce-e933-4ee8-8dd6-36471f63ac41.png)
 
-- how to deal with depression
-- how to keep good mental health.
-- Project will also have music features
-- Some motivational thoughts and quizzes section
+>Information about Good mental health
 
-## ⚙ Tech Used
+![image](https://user-images.githubusercontent.com/114678694/196767884-7bb0b3f2-d1a4-4dda-baa9-cebf31ea8681.png)
 
-| Frontend | HTML CSS JAVASCRIPT |
-| :------: | :-----------------: |
-| Backend  | bakend-api & jQuery |
+>Quizzes and Games
+
+![image](https://user-images.githubusercontent.com/114678694/196768399-5f520d48-7797-4ed1-b73b-3eebc019373d.png)
 
 ## 🏗 Project Structure
 
