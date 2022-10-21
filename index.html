@@ -1,76 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-32x32.png" />
-    <link rel="manifest" href="./Assets/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Patrick+Hand&family=Poppins:wght@200;300&family=Raleway:wght@300&family=Ubuntu:wght@300&family=Zen+Antique&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-    <!-- css -->
-    <link rel="stylesheet" href="./Assets/Css/style.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>TruHealth</title>
-  </head>
-  <body class="main" onload="loaded()">
-    <div id="loader"></div>
-    <header>
-      <a href="#"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
-      <nav class="navbar">
-        <div class="content">
-          <ul class="menu-list">
-            <div class="icon cancel-btn">
-              <i class="fas fa-times"></i>
-            </div>
-            <li class="items alt"><a href="./index.html">Home</a></li>
-            <li class="items"><a href="./info.html">Info</a></li>
-            <li class="items"><a href="./games.html">Fun</a></li>
-            <li class="items"><a href="./gethelp.html">GetHelp</a></li>
-          </ul>
-          <div class="icon menu-btn">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <section>
-      <div class="wid-main container">
-        <h1>MENTAL HEALTH IS IMPORTANT</h1>
-        <p>
-          The prolonged pandemic has resulted in people feeling increasingly isolated, which is likely to worsen their
-          mental health. Constant worries about how the future will unfold and the feelings of helplessness it brings
-          have undoubtedly imprinted themselves upon us. Constantly being fed with information and rumors is both
-          overwhelming and exhausting. The impact the prevailing situations are having on us are tremendous and mostly
-          negative. It has brought about an accelerated change in the mental state of people giving rise to feelings of
-          depression and mental illnesses. This website aims to provide information for coping and for taking care of
-          your mental health. Music is said to help calm the anxious mind and improve mental conditions, therefore this
-          website includes a quiz section to suggest music based on your mood. There is also a game section to keep you
-          occupied and keep the intrusive thoughts away. There is a fun section with jokes to lighten your mood and
-          motivational quotes to uplift you and boost morale.
-        </p>
-        <button class="btn btn-primary">
-          <span><a href="./info.html">Read more</a></span>
-        </button>
-      </div>
-    </section>
-    <footer class="footer">
-      <p>Made with <i class="fa fa-heart pulse"></i> by Team TruHealth</p>
-    </footer>
-    <script src="./Script/script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-32x32.png" />
+  <link rel="manifest" href="./Assets/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Patrick+Hand&family=Poppins:wght@200;300&family=Raleway:wght@300&family=Ubuntu:wght@300&family=Zen+Antique&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <!-- css -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="./Assets/Css/style.css" />
+  <title>TruHealth</title>
+</head>
+
+<body class="main" onload="loaded()">
+  <div id="loader"></div>
+  <header>
+    <a href="#"><img src="./Assets/Images/TruHealth.png" alt="TruHealth" /></a>
+  </header>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="./index.html">
+          <i class='bx bx-home-alt'></i>
+          <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li>
+        <a href="./info.html">
+          <i class='bx bx-info-circle' ></i>
+          <span class="links_name">Info</span>
+        </a>
+        <span class="tooltip">Info</span>
+      </li>
+      <li>
+        <a href="./games.html">
+          <i class='bx bxl-dribbble'></i>
+          <span class="links_name">Fun & Games</span>
+        </a>
+        <span class="tooltip">Fun & Games</span>
+      </li>
+      <li>
+        <a href="./gethelp.html">
+          <i class='bx bx-first-aid' ></i>
+          <span class="links_name">Get Help</span>
+        </a>
+        <span class="tooltip">Get Help</span>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="wid-main container">
+      <h1>MENTAL HEALTH IS IMPORTANT</h1>
+      <p>
+        The prolonged pandemic has resulted in people feeling increasingly isolated, which is likely to worsen their
+        mental health. Constant worries about how the future will unfold and the feelings of helplessness it brings
+        have undoubtedly imprinted themselves upon us. Constantly being fed with information and rumors is both
+        overwhelming and exhausting. The impact the prevailing situations are having on us are tremendous and mostly
+        negative. It has brought about an accelerated change in the mental state of people giving rise to feelings of
+        depression and mental illnesses. This website aims to provide information for coping and for taking care of
+        your mental health. Music is said to help calm the anxious mind and improve mental conditions, therefore this
+        website includes a quiz section to suggest music based on your mood. There is also a game section to keep you
+        occupied and keep the intrusive thoughts away. There is a fun section with jokes to lighten your mood and
+        motivational quotes to uplift you and boost morale.
+      </p>
+      <button class="btn btn-primary">
+        <span><a href="./info.html">Read more</a></span>
+      </button>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>Made with <i class="fa fa-heart pulse"></i> by Team TruHealth</p>
+  </footer>
+  <script src="./Script/script.js"></script>
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+
+    closeBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+
+    searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+      if (sidebar.classList.contains("open")) {
+        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+      } else {
+        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+      }
+    }
+  </script>
+</body>
+
 </html>
