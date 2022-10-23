@@ -16,6 +16,7 @@ Hey! If you are feeling that your health is not  going in right direction or you
 - Provide videos of mental health
 - Some quizzes,fun..
 - Some motivational thoughts
+- Sleep well
 
 <h1>Tech Stack</h1>
 
