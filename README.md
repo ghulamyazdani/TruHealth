@@ -4,14 +4,14 @@
 TruHealth is an application that helps you to maintain **Good Health**
 <h3>TruHealth:TruHealth is a state of optimal physical, mental and social well-being and not merely the absence of disease.</h3>
 
-Hey! If you are feeling that your health is not  going in right direction or you are feeling depressed ,then **TruHealth** comes with a solution.
+Hey! If you are feeling that your health is not going in right direction or you are feeling depressed, then **TruHealth** comes with a solution.
 
 ![undraw_medicine_b-1-ol](https://user-images.githubusercontent.com/114678694/196754243-f4c2014b-ec08-4844-9942-5024496efef7.svg)
 
 
 <h2>The TruHealth helps with</h2>
 
- - How to maintain good health
+- How to maintain good health
 - Provide information about mental health
 - Provide videos of mental health
 - Some quizzes,fun..
@@ -71,11 +71,11 @@ https://truhealth.vercel.app/
 ```
 ├───assets
 │   ├───css
-│   └───images
+│   ├───images
 |   └───favicon
 ├───script
 │   ├───jquery.min.js
-│   └─── quiz.js
+│   ├─── quiz.js
 |   └─── script.js
 
 ```
