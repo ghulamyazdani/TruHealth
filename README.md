@@ -1,7 +1,7 @@
   ![image](https://user-images.githubusercontent.com/114678694/196738791-3f3404da-e5cf-42aa-8004-ff4819e86fa1.png)
 <h1 align="center">TruHealth</h1>
 
-TruHealth is an application that helps you to maintain **Good Health**
+TruHealth is an application that helps you to maintain **Good Health**.
 <h3>TruHealth:TruHealth is a state of optimal physical, mental and social well-being and not merely the absence of disease.</h3>
 
 Hey! If you are feeling that your health is not  going in right direction or you are feeling depressed ,then **TruHealth** comes with a solution.
@@ -19,11 +19,11 @@ Hey! If you are feeling that your health is not  going in right direction or you
 
 <h1>Tech Stack</h1>
 
-<h2 align="center">Frontend</h1>
+<h2 align="center">Frontend</h2>
 
 ![undraw_static_assets_rpm6 (3)](https://user-images.githubusercontent.com/114678694/196762469-db02ebb2-e263-45b3-a9c0-44a0904452fb.svg)
 
-<h2 align="center">Backend</h1>
+<h2 align="center">Backend</h2>
 
 ![Untitled design](https://user-images.githubusercontent.com/114678694/196764740-22e63ace-a51b-405b-9257-1700929ae867.jpg)
 
